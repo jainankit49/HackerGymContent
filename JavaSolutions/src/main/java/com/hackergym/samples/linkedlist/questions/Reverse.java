@@ -45,22 +45,22 @@ public class Reverse<T> {
     public LinkedListNode<T> reverseRecursively(LinkedListNode<T> linkedList) {
         if (linkedList == null) return null;
 
-        // To solve this problem recursively, we need to select element i and then
-        // reverse the list pointed by i.next. Then we are going to append i to the end
-        // of the newly reverse list. To do that efficiently, we always need a pointer to the
-        // end of the reversed list. So we need to references: one two point to the end of each
-        // reversed sub list and one two point to head of the overall reversed list.
-        // Because we can't return two values in a method in java, we will use a container object.
-        // When we reach the end of the initial list in our recursive method, we will push the last
-        // element into this container object. This element will be head of the reversed list.
-        // when the method is done reversing the list, we get the new head and return it
-        // Why do we use a ArrayList container object ? Why can't we just pass a reference of
-        // type LinkedListNode and when we see the last element just point the reference to that ?
-        // We can't do this because:
-        // "Java manipulates objects 'by reference,' but it passes object references to methods 'by value."
+        // We need to select element i and then reverse the list pointed by i.next.
+        // Then, we are going to append i to the end of the newly reverse list.
+        // To do that efficiently, we always need a pointer to the end of
+        // the reversed list. So we need two references: one to point to the end of each
+        // reversed sub list and one to point to head of the overall reversed list.
+
+        // Because we cant return two values in a method in java,
+        // we will use a container object.
+        // Why cant we just pass a reference of type LinkedListNode and
+        // when we see the last element just point the reference to that ?
+        // We cant do this because:
+        // Java manipulates objects by reference, but it passes object references
+        // to methods by value.
         // This is one of those common mistakes that people make.
         // If this surprise you, take a look at:
-        // http://www.javaworld.com/article/2077424/learn-java/does-java-pass-by-reference-or-pass-by-value.html
+        // http://bit.ly/1kSVYkV
 
         List<LinkedListNode<T>> newHeadContainer = new ArrayList<>();
         solveRecursively(linkedList, newHeadContainer);
@@ -83,8 +83,9 @@ public class Reverse<T> {
 
         LinkedListNode<T> reversedOfRest = solveRecursively(head.next, newHeadContainer);
         reversedOfRest.next = head;
-        //here is another common mistake. If you do not set the head.next to null, you will most likely
-        // create a circular linked list and cause the recursion to go indefinitely. .
+        //here is another common mistake. If you do not set the head.next to null,
+        // you will most likely create a circular linked list
+        // and cause the recursion to go indefinitely.
         head.next = null;
         return head;
     }
