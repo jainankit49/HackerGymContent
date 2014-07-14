@@ -102,4 +102,21 @@ public class LRU<T> {
 
         return null;
     }
+
+    /**
+     * traverses the cache and returns the actual number of nodes in it
+     */
+    public int length() {
+        int calculateLength = 0;
+        LinkedListNode<T> temp = head;
+        while (temp != null) {
+            temp = temp.next;
+            calculateLength++;
+        }
+
+        //make sure that always calculated length and the explicit length match
+        assert calculateLength == currentLength;
+
+        return calculateLength;
+    }
 }
