@@ -36,7 +36,8 @@ public class KthElement<T> {
         return stack.pop();
     }
 
-    public LinkedListNode<T> getKthElementRecursively(LinkedListNode<T> head, int k) {
+    public LinkedListNode<T> getKthElementRecursively(LinkedListNode<T> head,
+                                                      int k) {
         if (head == null || k < 0) return null;
         List<LinkedListNode<T>> container = new ArrayList<>();
         performGetKthElementRecursively(head, k, container);
@@ -48,8 +49,8 @@ public class KthElement<T> {
 
     private int performGetKthElementRecursively(LinkedListNode<T> head, int k, List<LinkedListNode<T>> container) {
 
-        //here is another gotcha. Make sure that if we are getting the the last we cover it in out
-        //recursive method
+        //here is another gotcha. Make sure that if we are getting the
+        // last we cover it in out recursive method
         if (head.next == null) {
             if (k == 0) {
                 container.add(head);

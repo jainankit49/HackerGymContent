@@ -18,7 +18,8 @@ public class OddSeparator<T> {
      * @return a pair containing (EvenNodes, OddNodes) in which even nodes are nodes at the even
      * indexes and OddNodes are nodes at odd indexes
      */
-    public Pair<LinkedListNode<T>, LinkedListNode<T>> separateOddsQueue(LinkedListNode<T> head) {
+    public Pair<LinkedListNode<T>,
+            LinkedListNode<T>> separateOddsQueue(LinkedListNode<T> head) {
 
         if (head == null) return null;
         if (head.next == null) return new Pair<>(head, null);
@@ -62,7 +63,7 @@ public class OddSeparator<T> {
             oddTraverser.next = null;
         }
 
-        Pair <LinkedListNode<T>, LinkedListNode<T>> result = new Pair<>(head, oddHead);
+        Pair<LinkedListNode<T>, LinkedListNode<T>> result = new Pair<>(head, oddHead);
         return result;
     }
 

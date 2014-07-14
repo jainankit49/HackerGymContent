@@ -35,9 +35,10 @@ public class Interleaving<T> {
         temp = head;
         LinkedListNode<T> newHead = null;
         LinkedListNode<T> tempAdder = null;
-        //because of the way the middle is calculated, there will be less or equal items in the stack
-        //than the first half of the linked list. For this reason, it is the stack which will
-        //become empty before temp reaches null
+        //because of the way the middle is calculated, there will be less or equal
+        // items in the stack than the first half of the linked list.
+        // For this reason, it is the stack which will become empty
+        // before temp reaches null
         while (!stack.isEmpty()) {
             if (newHead == null) {
                 newHead = temp;
@@ -46,8 +47,10 @@ public class Interleaving<T> {
                 tempAdder.next = temp;
                 tempAdder = tempAdder.next;
             }
-            //this is a gotcha. If you don't move the temp before moving the tempAdder, temp will
-            //get corrupted and we won't have access to the elements of the linkedlist.
+            //this is a gotcha. If you dont move the temp before moving the tempAdder,
+            // temp will get corrupted and we wont have access to the elements of
+            // the linkedlist.
+
             temp = temp.next;
 
             tempAdder.next = stack.pop();
@@ -102,8 +105,9 @@ public class Interleaving<T> {
                 newTraverser = newTraverser.next;
             }
 
-            //this is a gotcha. If you don't move the temp before moving the tempAdder, temp will
-            //get corrupted and we won't have access to the elements of the linkedlist.
+            //this is a gotcha. If you dont move the temp before moving the tempAdder,
+            // temp will get corrupted and we wont have access to the elements
+            // of the linkedlist.
             firstHalfTraverser = firstHalfTraverser.next;
 
             newTraverser.next = secondHalfTraverser;

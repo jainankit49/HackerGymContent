@@ -14,9 +14,10 @@ public class IntersectDetector<T> {
     /**
      * finds the intersection of two linked list if one exists
      *
-     * @return the intersection point, or null if the linkedLists don't intersect
+     * @return the intersection point, or null if the linkedLists dont intersect
      */
-    public LinkedListNode<T> detectIntersectionWithHash(LinkedListNode<T> head1, LinkedListNode<T> head2) {
+    public LinkedListNode<T> detectIntersectionWithHash(LinkedListNode<T> head1,
+                                                        LinkedListNode<T> head2) {
 
         if (head1 == null || head2 == null) return null;
 
@@ -28,22 +29,24 @@ public class IntersectDetector<T> {
             head1 = head1.next;
         }
 
-        //now go through the second head and check whether we have seen an element before
+        //now go through the second head and check whether we
+        // have seen an element before
         while (head2 != null) {
             if (set.contains(head2)) return head2;
             head2 = head2.next;
         }
 
-        //we haven't found anything , return
+        //we havent found anything , return
         return null;
     }
 
     /**
      * finds the intersection of two linked list if one exists
      *
-     * @return the intersection point, or null if the linkedLists don't intersect
+     * @return the intersection point, or null if the linkedLists dont intersect
      */
-    public LinkedListNode<T> detectIntersectionWithPointers(LinkedListNode<T> head1, LinkedListNode<T> head2) {
+    public LinkedListNode<T> detectIntersectionWithPointers(LinkedListNode<T> head1,
+                                                            LinkedListNode<T> head2) {
 
         if (head1 == null || head2 == null) return null;
 
@@ -80,7 +83,7 @@ public class IntersectDetector<T> {
             shorterTraverser = shorterTraverser.next;
         }
 
-        //we don't have any intersection
+        //we dont have any intersection
         return null;
     }
 

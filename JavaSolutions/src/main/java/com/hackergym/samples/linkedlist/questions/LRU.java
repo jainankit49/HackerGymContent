@@ -19,7 +19,8 @@ public class LRU<T> {
     }
 
     /**
-     * inserts the node in the cache. If the cache is not full the item is simply inserted.
+     * inserts the node in the cache. If the cache is not full the item is simply
+     * inserted.
      * If cache is full. The Least Recently Used item will be kicked out of the cache.
      * Usage is determined by the get method on this class
      *
@@ -54,7 +55,7 @@ public class LRU<T> {
 
     /**
      * checks whether the item is in the cache. Does not count as access and
-     * hence doesn't promote the item as used.
+     * hence doesnt promote the item as used.
      *
      * @param value the value to look for in the cache
      */
@@ -100,22 +101,5 @@ public class LRU<T> {
         }
 
         return null;
-    }
-
-    /**
-     * Mostly for debug purposes. traverses the cache and returns the actual number of nodes in it
-     */
-    public int length() {
-        int calculateLength = 0;
-        LinkedListNode<T> temp = head;
-        while (temp != null) {
-            temp = temp.next;
-            calculateLength++;
-        }
-
-        //make sure that always calculated length and the explicit length match
-        assert calculateLength == currentLength;
-
-        return calculateLength;
     }
 }

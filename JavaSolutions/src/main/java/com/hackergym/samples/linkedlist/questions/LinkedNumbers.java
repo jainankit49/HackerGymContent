@@ -216,7 +216,7 @@ public class LinkedNumbers {
         return size;
     }
 
-    //zeros in the back of number don't have meaning, remove those
+    //zeros in the back of number do not have meaning, remove those
     private LinkedListNode<Integer> removeExtraZeros(LinkedListNode<Integer> head) {
         while (head != null && head.value == 0) {
             head = head.next;
@@ -244,7 +244,7 @@ public class LinkedNumbers {
             temp2 = temp2.next;
         }
 
-        //both numbers are equal, the order doesn't matter
+        //both numbers are equal, the order does not matter
         result.add(num2);
         result.add(num1);
         return result;

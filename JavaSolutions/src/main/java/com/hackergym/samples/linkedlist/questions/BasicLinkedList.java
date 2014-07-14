@@ -74,7 +74,7 @@ class BasicLinkedList<T> {
      *
      * @param node  the node to insert into the linked list
      * @param index the index at which to add the node. If the index is not a valid index in the linked list
-     *              The node won't be inserted and the method will return false
+     *              The node wont be inserted and the method will return false
      * @return the head of the linked list if successful and null if unsuccessful.
      * Please note that returning null may not be the best design decision but for this question
      * its good enough
@@ -163,6 +163,4 @@ class BasicLinkedList<T> {
 
         return newHead;
     }
-
-
 }
