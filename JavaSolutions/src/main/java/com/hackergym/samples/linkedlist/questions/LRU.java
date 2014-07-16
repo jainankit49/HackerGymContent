@@ -6,6 +6,7 @@ import com.hackergym.samples.linkedlist.model.LinkedListNode;
  * Created by Fathalian on 6/6/14.
  * HackerGym.com
  */
+
 public class LRU<T> {
 
     private LinkedListNode<T> head;
