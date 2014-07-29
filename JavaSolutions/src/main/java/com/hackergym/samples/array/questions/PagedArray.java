@@ -127,8 +127,6 @@ public class PagedArray {
                         elementIndex--;
                     }
 
-
-
                     result = true;
                 }
             }
