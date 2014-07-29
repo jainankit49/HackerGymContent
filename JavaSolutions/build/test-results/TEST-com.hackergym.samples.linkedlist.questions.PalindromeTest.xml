@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.hackergym.samples.linkedlist.questions.PalindromeTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2014-06-16T17:56:46" hostname="Alis-MacBook-Pro.local" time="0.002">
+<testsuite name="com.hackergym.samples.linkedlist.questions.PalindromeTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2014-07-29T04:30:52" hostname="Alis-MacBook-Pro.local" time="0.001">
   <properties/>
   <testcase name="testIsPalindromeStackEven" classname="com.hackergym.samples.linkedlist.questions.PalindromeTest" time="0.0"/>
   <testcase name="testIsPalindromeReverseOddNegative" classname="com.hackergym.samples.linkedlist.questions.PalindromeTest" time="0.0"/>
   <testcase name="testIsPalindromeHalfReverseOddNegative" classname="com.hackergym.samples.linkedlist.questions.PalindromeTest" time="0.0"/>
   <testcase name="testIsPalindromeStackOddNegative" classname="com.hackergym.samples.linkedlist.questions.PalindromeTest" time="0.0"/>
-  <testcase name="testIsPalindromeReverseEvenNegative" classname="com.hackergym.samples.linkedlist.questions.PalindromeTest" time="0.0"/>
+  <testcase name="testIsPalindromeReverseEvenNegative" classname="com.hackergym.samples.linkedlist.questions.PalindromeTest" time="0.001"/>
   <testcase name="testIsPalindromeReverseSingleElement" classname="com.hackergym.samples.linkedlist.questions.PalindromeTest" time="0.0"/>
   <testcase name="testIsPalindromeReverseEven" classname="com.hackergym.samples.linkedlist.questions.PalindromeTest" time="0.0"/>
   <testcase name="testIsPalindromeHalfReverseOdd" classname="com.hackergym.samples.linkedlist.questions.PalindromeTest" time="0.0"/>
   <testcase name="testIsPalindromeStackOdd" classname="com.hackergym.samples.linkedlist.questions.PalindromeTest" time="0.0"/>
   <testcase name="testIsPalindromeHalfReverseEven" classname="com.hackergym.samples.linkedlist.questions.PalindromeTest" time="0.0"/>
   <testcase name="testIsPalindromeStackEvenNegative" classname="com.hackergym.samples.linkedlist.questions.PalindromeTest" time="0.0"/>
-  <testcase name="testIsPalindromeStackSingle" classname="com.hackergym.samples.linkedlist.questions.PalindromeTest" time="0.001"/>
+  <testcase name="testIsPalindromeStackSingle" classname="com.hackergym.samples.linkedlist.questions.PalindromeTest" time="0.0"/>
   <testcase name="testIsPalindromeHalfReverseEvenNegative" classname="com.hackergym.samples.linkedlist.questions.PalindromeTest" time="0.0"/>
   <testcase name="testIsPalindromeReverseOdd" classname="com.hackergym.samples.linkedlist.questions.PalindromeTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

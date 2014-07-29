@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.hackergym.samples.linkedlist.questions.BasicLinkedListTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2014-06-16T17:56:45" hostname="Alis-MacBook-Pro.local" time="0.011">
+<testsuite name="com.hackergym.samples.linkedlist.questions.BasicLinkedListTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2014-07-29T04:30:52" hostname="Alis-MacBook-Pro.local" time="0.009">
   <properties/>
   <testcase name="testGetNodeAtIndexValid" classname="com.hackergym.samples.linkedlist.questions.BasicLinkedListTest" time="0.003"/>
   <testcase name="testSearchNodeWhenListHasOneElement" classname="com.hackergym.samples.linkedlist.questions.BasicLinkedListTest" time="0.0"/>
@@ -16,7 +16,7 @@
   <testcase name="testDeleteNodeAtEnd" classname="com.hackergym.samples.linkedlist.questions.BasicLinkedListTest" time="0.0"/>
   <testcase name="testGetNodeAtIndexEmptyList" classname="com.hackergym.samples.linkedlist.questions.BasicLinkedListTest" time="0.0"/>
   <testcase name="testDeleteNodeSingleList" classname="com.hackergym.samples.linkedlist.questions.BasicLinkedListTest" time="0.0"/>
-  <testcase name="testSearchNodeWhenExists" classname="com.hackergym.samples.linkedlist.questions.BasicLinkedListTest" time="0.001"/>
+  <testcase name="testSearchNodeWhenExists" classname="com.hackergym.samples.linkedlist.questions.BasicLinkedListTest" time="0.0"/>
   <testcase name="testGetNodeAtIndexOneElementList" classname="com.hackergym.samples.linkedlist.questions.BasicLinkedListTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

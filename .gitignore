@@ -5,3 +5,4 @@ JavaSolutions/out/production/Solutions/com/hackergym/samples/linkedlist/question
 JavaSolutions/out/production/Solutions/com/hackergym/samples/linkedlist/questions/OddSeparator.class
 JavaSolutions/out/production/Solutions/com/hackergym/samples/linkedlist/questions/Reverse.class
 *.class
+.DS_Store

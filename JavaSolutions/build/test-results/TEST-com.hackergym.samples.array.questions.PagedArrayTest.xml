@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hackergym.samples.array.questions.PagedArrayTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2014-07-29T04:30:52" hostname="Alis-MacBook-Pro.local" time="0.003">
+  <properties/>
+  <testcase name="testInsertElementNullElement" classname="com.hackergym.samples.array.questions.PagedArrayTest" time="0.001"/>
+  <testcase name="testInsertElementLastPageFull" classname="com.hackergym.samples.array.questions.PagedArrayTest" time="0.0"/>
+  <testcase name="testDeleteElementLastPageEmpty" classname="com.hackergym.samples.array.questions.PagedArrayTest" time="0.0"/>
+  <testcase name="testInsertElementNormal" classname="com.hackergym.samples.array.questions.PagedArrayTest" time="0.0"/>
+  <testcase name="testDeleteElementMultiple" classname="com.hackergym.samples.array.questions.PagedArrayTest" time="0.0"/>
+  <testcase name="testDeleteElementNormal" classname="com.hackergym.samples.array.questions.PagedArrayTest" time="0.0"/>
+  <testcase name="testDeleteElementNonExisting" classname="com.hackergym.samples.array.questions.PagedArrayTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
