@@ -125,28 +125,6 @@ public class PagedArrayTest {
     }
 
     @Test
-    public void testDeleteElementMultiple() {
-        //Arrange
-        PagedArray pagedArray = pagedArray(5, 23);
-        String actualValue = "value";
-
-        //add an element multiple times
-        pagedArray.insert(2,2, new Element(actualValue));
-        pagedArray.insert(3,1, new Element(actualValue));
-        pagedArray.insert(0,0, new Element(actualValue));
-        int actualSize = pagedArray.count();
-
-        //Act
-        pagedArray.delete(new Element(actualValue));
-
-        //Assert
-        int expectedSize = pagedArray.count();
-        List<Element> foundElement = pagedArray.getElement(new Element(actualValue));
-        assertThat(foundElement.size(), is(0));
-        assertThat(expectedSize, is(actualSize - 3));
-    }
-
-    @Test
     public void testDeleteElementLastPageEmpty() {
 
         //Arrange
@@ -164,28 +142,6 @@ public class PagedArrayTest {
         assertThat(foundElement.size(), is(0));
         assertThat(expectedSize, is(actualSize - 1));
 
-    }
-
-    @Test
-    public void testDeleteBackToBackItems() {
-        //Arrange
-        PagedArray pagedArray = pagedArray(5, 23);
-        String actualValue = "value";
-
-        //add an element multiple times
-        pagedArray.insert(2,2, new Element(actualValue));
-        pagedArray.insert(2,3, new Element(actualValue));
-        pagedArray.insert(2,4, new Element(actualValue));
-        int actualSize = pagedArray.count();
-
-        //Act
-        pagedArray.delete(new Element(actualValue));
-
-        //Assert
-        int expectedSize = pagedArray.count();
-        List<Element> foundElement = pagedArray.getElement(new Element(actualValue));
-        assertThat(foundElement.size(), is(0));
-        assertThat(expectedSize, is(actualSize - 3));
     }
 
     @Test

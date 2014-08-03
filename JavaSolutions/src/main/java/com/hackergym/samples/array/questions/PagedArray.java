@@ -95,7 +95,7 @@ public class PagedArray {
     }
 
     /**
-     * Deletes all the elements in the PagedArray that have the same value as e.
+     * Deletes the first element in the PagedArray that have the same value as e.
      *
      * @param e elements to be deleted
      * @return true if any item was deleted.
@@ -103,31 +103,28 @@ public class PagedArray {
     public boolean delete(Element e) {
 
         boolean result = false;
-        //we use a traditional for loop instead of foreach
-        //because we need the indexes
+
         for (int pageIndex = 0; pageIndex < pageCount(); pageIndex++) {
             List<Element> pageElements = elements.get(pageIndex);
 
             for (int elementIndex = 0; elementIndex < pageElements.size(); elementIndex++) {
                 if (pageElements.get(elementIndex).getValue().equals(e.getValue())) {
 
-                    //deleting the element from pageIndex will cause
-                    //the current index to change so we have to reflect that here:
-                    //if we are removing the last item from the last page, then
                     //we have reduced the number of pages so just break
                     if (pageIndex == pageCount() - 1 && pageElements.size() == 1) {
+                        //we are supposed to only find the first element
                         deleteElementAtIndex(pageIndex, elementIndex);
-                        break;
+                        return true;
+
                     }
                     //otherwise we have to move the index one back so that in the next
                     //for loop iteration that it will get incremented it will be on the
                     //next value (which has replaced the current value)
                     else {
+                        //we are only supposed to delete the first element
                         deleteElementAtIndex(pageIndex, elementIndex);
-                        elementIndex--;
+                        return true;
                     }
-
-                    result = true;
                 }
             }
         }
