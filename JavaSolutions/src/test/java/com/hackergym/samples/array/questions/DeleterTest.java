@@ -180,4 +180,16 @@ public class DeleterTest {
         }
     }
 
+    @Test
+    public void testDeleteWithoutMemoryAllElements() throws Exception {
+
+        String[] a = {"d", "d", "d", "d", "d"};
+        String[] expectedResult = {};
+
+        String[] result = deleter.deleteWithoutMemory(a, "d");
+
+        assertThat(result.length, is(expectedResult.length));
+
+    }
+
 }

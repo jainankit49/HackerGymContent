@@ -55,4 +55,33 @@ public class DuplicatesTest {
         assertThat(duplicateRemover.removeDuplicates("hhhhhhhhh"), is("h"));
     }
 
+    @Test
+    public void testRemoveDuplicatesGrouping() {
+        assertThat(duplicateRemover.removeDuplicatesGrouping("HACCKERRGYMM"), is("HACKERGYM"));
+    }
+
+    @Test
+    public void testRemoveDuplicatesNoDuplicatesGrouping() {
+        assertThat(duplicateRemover.removeDuplicatesGrouping("HACKERGYM"), is("HACKERGYM"));
+    }
+
+    @Test
+    public void testRemoveDuplicatesAllDuplicatesGrouping() {
+        assertThat(duplicateRemover.removeDuplicatesGrouping("hhhhhhhhh"), is("h"));
+    }
+
+    @Test
+    public void testRemoveDuplicatesAllDuplicatesGroupingAtEnd() {
+        assertThat(duplicateRemover.removeDuplicatesGrouping("1234567hh"), is("1234567h"));
+    }
+
+    @Test
+    public void testRemoveDuplicatesAllDuplicatesGroupingAtBeginning() {
+        assertThat(duplicateRemover.removeDuplicatesGrouping("aa1234567"), is("a1234567"));
+    }
+
+    @Test
+    public void testRemoveDuplicatesAllDuplicatesGroupingSingle() {
+        assertThat(duplicateRemover.removeDuplicatesGrouping("1234hh567"), is("1234h567"));
+    }
 }

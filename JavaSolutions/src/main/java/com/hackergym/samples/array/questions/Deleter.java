@@ -42,12 +42,9 @@ public class Deleter {
         while(candidate < array.length) {
 
             //first move to the first candidate (the first non deletable element)
-            while(array[candidate].equals(delValue)) {
+            while(candidate < array.length &&
+                    array[candidate].equals(delValue)) {
                 candidate++;
-                //break when we first hit out of bounds
-                if(candidate >= array.length) {
-                    break;
-                }
             }
 
             //break when we first hit out of bounds
