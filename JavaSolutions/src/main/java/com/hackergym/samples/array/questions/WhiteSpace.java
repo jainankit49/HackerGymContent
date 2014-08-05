@@ -1,5 +1,9 @@
 package com.hackergym.samples.array.questions;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Created by Fathalian on 7/30/14.
  * HackerGym.com
@@ -8,51 +12,67 @@ public class WhiteSpace {
 
     public String removeWhiteSpaceInPlace(String s) {
 
-        char[] charArray = s.toCharArray();
-        //The size of the array is changing by removal of empty spaces
-        //however the array.length doesn't change in java
-        //we keep track of the effective size using this index
-        int endOfArrayIndex = charArray.length - 1;
-        for (int i = 0; i <= endOfArrayIndex; i++) {
-            if (charArray[i] == ' ') {
-                //see if there are following spaces and remove them
-                int whitespaceCount = 0;
-                int j = i + 1;
-                while (j <= endOfArrayIndex &&
-                        charArray[j] == ' ') {
+        char[] chars = s.toCharArray();
 
-                    whitespaceCount++;
-                    j++;
+        //first iterate over the elements and select the ones that
+        //need to be deleted
+        Set<Integer> toBeDeleted = findExtraSpaces(chars);
 
+
+        //follow the same approach as delete but look into the
+        //toBeDeleted set to determine if something needs to be deleted
+        int current = 0;
+        int candidate = 0;
+
+        while (candidate < chars.length) {
+
+            //first move to the candidate (the first non deletable element)
+            while (candidate < chars.length &&
+                    toBeDeleted.contains(candidate)) {
+                candidate++;
+            }
+
+            //break when we first hit out of bounds
+            if (candidate >= chars.length) {
+                break;
+            }
+
+            //check if the currentElement needs to be deleted
+            if (toBeDeleted.contains(current)) {
+                char temp = chars[current];
+                chars[current] = chars[candidate];
+                chars[candidate] = temp;
+                toBeDeleted.add(candidate);
+            }
+
+            candidate++;
+            current++;
+        }
+
+        return String.valueOf(Arrays.copyOfRange(chars, 0, current));
+    }
+
+    public Set<Integer> findExtraSpaces(char[] chars) {
+
+        Set<Integer> toBeDeleted = new HashSet<>();
+        for (int i = 0; i < chars.length; i++) {
+            if (chars[i] == ' ') {
+                if (i == 0) {
+                    toBeDeleted.add(i);
+                } else if (chars[i - 1] == ' ') {
+                    toBeDeleted.add(i);
                 }
 
-                boolean needsTrimming = whitespaceCount > 0 || i == 0 || j == endOfArrayIndex + 1;
-                int startOfWhiteSpaces = i + 1;
-                //if we are the beginning or end of the String, everything is extra whitespace
-                if (i == 0 || j == endOfArrayIndex + 1) {
-                    startOfWhiteSpaces = i;
-                    whitespaceCount++;
-                }
-
-                if (needsTrimming) {
-                    //now remove the whitespace
-                    for (int shiftIndex = startOfWhiteSpaces;
-                         shiftIndex + whitespaceCount <= endOfArrayIndex;
-                         shiftIndex++) {
-                        charArray[shiftIndex] = charArray[shiftIndex + whitespaceCount];
+                if (i == chars.length - 1) {
+                    int j = i;
+                    while (j > 0 && chars[j] == ' ') {
+                        toBeDeleted.add(j);
+                        j--;
                     }
-
-                    //finally reduce the effective size by the number of whitespaces that was removed
-                    endOfArrayIndex -= whitespaceCount;
                 }
-
             }
         }
-        StringBuilder builder = new StringBuilder();
-        for (int i = 0; i <= endOfArrayIndex; i++) {
-            builder.append(charArray[i]);
-        }
-        return builder.toString();
+        return toBeDeleted;
     }
 
     public String removeWhiteSpaceExtraMemory(String s) {
@@ -62,6 +82,7 @@ public class WhiteSpace {
         //first find the number of extra whitespaces
         int extraWhitespaceCount = 0;
         int currentIndex = 0;
+
         while (currentIndex < chars.length) {
             if (chars[currentIndex] == ' ') {
                 //see if there are following spaces and remove them

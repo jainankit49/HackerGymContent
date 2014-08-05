@@ -11,8 +11,10 @@ public class WhiteSpaceTest {
     @Test
     public void testRemoveWhiteSpaceInPlace() throws Exception {
 
-        assertThat(remover.removeWhiteSpaceInPlace("  My Cat    is   "),
-                is("My Cat is"));
+//        assertThat(remover.removeWhiteSpaceInPlace("  My Cat    is   "),
+//                is("My Cat is"));
+        assertThat(remover.removeWhiteSpaceInPlace("    My  abs       are good    "),
+                is("My abs are good"));
     }
 
     @Test

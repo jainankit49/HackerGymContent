@@ -41,7 +41,7 @@ public class Deleter {
 
         while(candidate < array.length) {
 
-            //first move to the first candidate (the first non deletable element)
+            //first move to the candidate (the first non deletable element)
             while(candidate < array.length &&
                     array[candidate].equals(delValue)) {
                 candidate++;
@@ -52,7 +52,7 @@ public class Deleter {
                 break;
             }
 
-            //check if the element current points to needs to be deleted
+            //check if the currentElement needs to be deleted
             if (array[current].equals(delValue)) {
                 String temp = array[current];
                 array[current] = array[candidate];

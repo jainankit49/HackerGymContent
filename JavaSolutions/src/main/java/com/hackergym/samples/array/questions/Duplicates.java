@@ -79,7 +79,6 @@ public class Duplicates {
             }
             //If the element under pointers is in the hash,
             // swap it with the candidate.
-
             if (set.contains(chars[current])) {
                 char temp = chars[current];
                 chars[current] = chars[candidate];
