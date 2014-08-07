@@ -12,8 +12,8 @@ public class Deleter {
 
         //first calculate the size of the reduced array
         int count = 0;
-        for(int i = 0 ; i < array.length; i++) {
-            if(array[i].equals(delValue)) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].equals(delValue)) {
                 count++;
             }
         }
@@ -24,7 +24,7 @@ public class Deleter {
         //go through the elements of the array one by one and copy them
         //if they are not to be deleted
         int resultIndex = 0;
-        for(int i = 0 ; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             if (!array[i].equals(delValue)) {
                 result[resultIndex] = array[i];
                 resultIndex++;
@@ -39,10 +39,10 @@ public class Deleter {
         int current = 0;
         int candidate = 0;
 
-        while(candidate < array.length) {
+        while (candidate < array.length) {
 
             //first move to the candidate (the first non deletable element)
-            while(candidate < array.length &&
+            while (candidate < array.length &&
                     array[candidate].equals(delValue)) {
                 candidate++;
             }
@@ -70,7 +70,7 @@ public class Deleter {
         //this is technically, a little bit of extra memory, there are tricks
         //you can do in java to remove this but for simplicity we just copy the
         //array. If this was c++ or c we could have easily achieved the splice operation
-       return Arrays.copyOfRange(array,0, current);
+        return Arrays.copyOfRange(array, 0, current);
 
     }
 }
