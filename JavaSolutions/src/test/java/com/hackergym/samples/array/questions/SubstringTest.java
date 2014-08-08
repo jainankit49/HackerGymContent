@@ -83,7 +83,7 @@ public class SubstringTest {
         //Assert
         String text = "I Have forgotten my brain";
 //        String text = "It seems that I have forgotten to take a shower today";
-        String searchString = "Hordor";
+        String searchString = "forgotten";
 
         //Act
         int index = finder.findSubstringRabinKarp(text, searchString);
