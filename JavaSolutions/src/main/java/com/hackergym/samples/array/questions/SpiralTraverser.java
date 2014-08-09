@@ -15,7 +15,7 @@ public class SpiralTraverser {
 
         //handle the edge case of a 1x1 matrix here
         if (matrix.length == 1) return String.valueOf(matrix[0][0]) ;
-        
+
         StringBuilder result = new StringBuilder();
         int row = 0;
         int col = 0;
