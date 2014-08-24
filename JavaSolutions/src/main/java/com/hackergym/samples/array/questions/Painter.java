@@ -67,31 +67,31 @@ public class Painter {
         }
 
         while(!queue.isEmpty()) {
-            Pair<Integer, Integer> point = queue.removeFirst();
-            screen[point.fst][point.snd] = true;
+            Pair<Integer, Integer> cell = queue.removeFirst();
+            screen[cell.fst][cell.snd] = true;
 
             //top neighbor
-            if (point.fst -1 >= 0 &&
-                    screen[point.fst -1][point.snd] == false) {
-                queue.addLast(new Pair<>(point.fst-1, point.snd));
+            if (cell.fst -1 >= 0 &&
+                    screen[cell.fst -1][cell.snd] == false) {
+                queue.addLast(new Pair<>(cell.fst-1, cell.snd));
             }
 
             //bottom neighbor
-            if (point.fst + 1 < screen.length &&
-                    screen[point.fst + 1][point.snd] == false) {
-                queue.addLast(new Pair<>(point.fst + 1, point.snd));
+            if (cell.fst + 1 < screen.length &&
+                    screen[cell.fst + 1][cell.snd] == false) {
+                queue.addLast(new Pair<>(cell.fst + 1, cell.snd));
             }
 
             //left neighbor
-            if (point.snd -1 >= 0 &&
-                    screen[point.fst][point.snd -1] == false) {
-                queue.addLast(new Pair<>(point.fst, point.snd -1));
+            if (cell.snd -1 >= 0 &&
+                    screen[cell.fst][cell.snd -1] == false) {
+                queue.addLast(new Pair<>(cell.fst, cell.snd -1));
             }
 
             //right neighbor
-            if (point.snd +1 < screen[0].length &&
-                    screen[point.fst][point.snd + 1] == false) {
-                queue.addLast(new Pair<>(point.fst, point.snd + 1));
+            if (cell.snd +1 < screen[0].length &&
+                    screen[cell.fst][cell.snd + 1] == false) {
+                queue.addLast(new Pair<>(cell.fst, cell.snd + 1));
             }
         }
 
