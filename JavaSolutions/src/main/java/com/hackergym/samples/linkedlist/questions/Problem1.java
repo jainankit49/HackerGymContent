@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Question:
  * Implement an algorithm that reverses a linked list.
- * For Detailed Answer see :
+ * For detailed answer see :
  * http://hackergym.com/#/problemView/3489afb7-9dad-4310-a907-02a265bea32c?p=1
  */
 

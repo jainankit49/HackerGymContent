@@ -21,7 +21,7 @@ public class Interleaving<T> {
         //returns the median and if the list is even returns the element closer
         //to the beginning. Because of that in both cases we just move the middle
         //one ahead so we reach the beginning of the possible palindrome second half
-        MiddleFinder<T> middleFinder = new MiddleFinder<>();
+        Problem3<T> middleFinder = new Problem3<>();
         LinkedListNode<T> temp = middleFinder.findMiddlePointers(head);
         temp = temp.next;
 
@@ -78,7 +78,7 @@ public class Interleaving<T> {
         //returns the median and if the list is even returns the element closer
         //to the beginning. Because of that in both cases we just move the middle
         //one ahead so we reach the beginning of the possible palindrome second half
-        MiddleFinder<T> middleFinder = new MiddleFinder<>();
+        Problem3<T> middleFinder = new Problem3<>();
         LinkedListNode<T> temp = middleFinder.findMiddlePointers(head);
         temp = temp.next;
 

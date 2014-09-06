@@ -7,9 +7,9 @@ import org.junit.Test;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
-public class MiddleFinderTest {
+public class Problem3Test {
 
-    MiddleFinder<String> solver = new MiddleFinder<>();
+    Problem3<String> solver = new Problem3<>();
 
     @Test
     public void testFindMiddleIterativeOdd() throws Exception {
@@ -18,7 +18,7 @@ public class MiddleFinderTest {
         LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(size);
         LinkedListNode<String> actualMid = solver.findMiddleIterative(head);
         BasicLinkedList<String> linkedListHelper = new BasicLinkedList<>(head);
-        LinkedListNode<String> expectedMid = linkedListHelper.getNodeAtIndex(size/2);
+        LinkedListNode<String> expectedMid = linkedListHelper.getNodeAtIndex(size / 2);
 
         assertThat(expectedMid.value, is(actualMid.value));
     }
@@ -29,11 +29,12 @@ public class MiddleFinderTest {
         LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(size);
         LinkedListNode<String> actualMid = solver.findMiddleIterative(head);
         BasicLinkedList<String> linkedListHelper = new BasicLinkedList<>(head);
-        LinkedListNode<String> expectedMid = linkedListHelper.getNodeAtIndex(size/2 - 1);
+        LinkedListNode<String> expectedMid = linkedListHelper.getNodeAtIndex(size / 2 - 1);
 
         assertThat(expectedMid.value, is(actualMid.value));
 
     }
+
     @Test
     public void testFindMiddleIterativeSingleElement() throws Exception {
         int size = 1;
@@ -52,7 +53,7 @@ public class MiddleFinderTest {
         LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(size);
         LinkedListNode<String> actualMid = solver.findMiddlePointers(head);
         BasicLinkedList<String> linkedListHelper = new BasicLinkedList<>(head);
-        LinkedListNode<String> expectedMid = linkedListHelper.getNodeAtIndex(size/2 - 1);
+        LinkedListNode<String> expectedMid = linkedListHelper.getNodeAtIndex(size / 2 - 1);
 
         assertThat(expectedMid.value, is(actualMid.value));
 
@@ -64,7 +65,7 @@ public class MiddleFinderTest {
         LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(size);
         LinkedListNode<String> actualMid = solver.findMiddlePointers(head);
         BasicLinkedList<String> linkedListHelper = new BasicLinkedList<>(head);
-        LinkedListNode<String> expectedMid = linkedListHelper.getNodeAtIndex(size/2);
+        LinkedListNode<String> expectedMid = linkedListHelper.getNodeAtIndex(size / 2);
 
         assertThat(expectedMid.value, is(actualMid.value));
     }
@@ -79,5 +80,40 @@ public class MiddleFinderTest {
 
         assertThat(expectedMid.value, is(actualMid.value));
 
+    }
+
+    @Test
+    public void testMiddleCustomOdd() throws Exception {
+
+        int size = 5;
+        LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(size);
+        LinkedListNode<String> actualMid = solver.findMiddleCustom(head);
+        BasicLinkedList<String> linkedListHelper = new BasicLinkedList<>(head);
+        LinkedListNode<String> expectedMid = linkedListHelper.getNodeAtIndex(size / 2);
+
+        assertThat(expectedMid.value, is(actualMid.value));
+    }
+
+    @Test
+    public void testMiddleCustomEven() throws Exception {
+
+        int size = 4;
+        LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(size);
+        LinkedListNode<String> actualMid = solver.findMiddleCustom(head);
+        BasicLinkedList<String> linkedListHelper = new BasicLinkedList<>(head);
+        LinkedListNode<String> expectedMid = linkedListHelper.getNodeAtIndex(size / 2 - 1);
+
+        assertThat(expectedMid.value, is(actualMid.value));
+    }
+
+    @Test
+    public void testFindMiddleCustomSingleElement() throws Exception {
+        int size = 1;
+        LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(size);
+        LinkedListNode<String> actualMid = solver.findMiddleCustom(head);
+        BasicLinkedList<String> linkedListHelper = new BasicLinkedList<>(head);
+        LinkedListNode<String> expectedMid = linkedListHelper.getNodeAtIndex(0);
+
+        assertThat(expectedMid.value, is(actualMid.value));
     }
 }

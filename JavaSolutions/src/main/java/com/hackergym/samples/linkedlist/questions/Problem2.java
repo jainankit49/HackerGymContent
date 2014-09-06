@@ -7,7 +7,24 @@ import com.hackergym.samples.linkedlist.model.LinkedListNode;
  * HackerGym.com
  */
 
-public class LRU<T> {
+/**
+ * Question:
+ * A Least Recently Used (LRU) cache of size n is a temporary storage of size n
+ * that holds the top n most frequently accessed items. Implement such storage with a linked list.
+ *
+ * For Detailed answer see:
+ * http://hackergym.com/#/problemView/3489afb7-9dad-4310-a907-02a265bea32c?p=2
+ */
+public class Problem2<T> {
+
+    /*============================================
+                    Your Custom Solution
+
+    To add your custom solution replace the code inside all
+    the public methods with your own code.
+    Unit tests will be automatically run against your code.
+    ============================================*/
+
 
     private LinkedListNode<T> head;
     //for constant insertion time at the end
@@ -15,7 +32,7 @@ public class LRU<T> {
     private final int size;
     private int currentLength = 0;
 
-    public LRU(int size) {
+    public Problem2(int size) {
         this.size = size;
     }
 

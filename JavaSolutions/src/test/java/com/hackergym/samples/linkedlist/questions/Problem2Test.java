@@ -6,12 +6,12 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
-public class LRUTest {
+public class Problem2Test {
 
     @Test
     public void testLRUInsert() throws Exception {
         int size = 4;
-        LRU<String> lru = new LRU<>(4);
+        Problem2<String> lru = new Problem2<>(4);
 
         for (int i = 0; i < 4; i++) {
             LinkedListNode<String> node = new LinkedListNode<>(String.valueOf(i));
@@ -44,7 +44,7 @@ public class LRUTest {
     public void testLRUGet() throws Exception {
 
         int size = 4;
-        LRU<String> lru = new LRU<>(4);
+        Problem2<String> lru = new Problem2<>(4);
 
         for (int i = 0; i < 4; i++) {
             LinkedListNode<String> node = new LinkedListNode<>(String.valueOf(i));
@@ -104,7 +104,7 @@ public class LRUTest {
     public void testLRUSizeOne() throws Exception {
         int size = 1;
         String value = "0";
-        LRU<String> lru = new LRU<>(size);
+        Problem2<String> lru = new Problem2<>(size);
         LinkedListNode<String> node = new LinkedListNode<>(value);
         lru.insert(node);
 

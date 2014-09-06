@@ -43,7 +43,7 @@ public class Palindrome {
         //returns the median and if the list is even returns the element closer
         //to the beginning. Because of that in both cases we just move the middle
         //one ahead so we reach the beginning of the possible palindrome second half
-        MiddleFinder<String> middleFinder = new MiddleFinder<>();
+        Problem3<String> middleFinder = new Problem3<>();
         LinkedListNode<String> temp = middleFinder.findMiddlePointers(head);
         if (temp == null) return false;
         temp = temp.next;
@@ -70,7 +70,7 @@ public class Palindrome {
         //returns the median and if the list is even returns the element closer
         //to the beginning. Because of that in both cases we just move the middle
         //one ahead so we reach the beginning of the possible palindrome second half
-        MiddleFinder<String> middleFinder = new MiddleFinder<>();
+        Problem3<String> middleFinder = new Problem3<>();
         LinkedListNode<String> temp = middleFinder.findMiddlePointers(head);
         if (temp == null) return false;
         temp = temp.next;
