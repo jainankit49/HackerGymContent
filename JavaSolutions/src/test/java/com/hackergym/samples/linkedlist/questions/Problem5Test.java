@@ -6,14 +6,14 @@ import org.junit.Test;
 
 import java.util.List;
 import java.util.function.BiFunction;
-import java.util.function.Function;
 
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
-public class KthElementTest {
+public class Problem5Test {
 
-    private final KthElement<String> solver = new KthElement<>();
+    private final Problem5<String> solver = new Problem5<>();
+
     @Test
     public void testGetKthElementStack() throws Exception {
         LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(5);
@@ -36,7 +36,7 @@ public class KthElementTest {
     }
 
     @Test
-    public void testGetKthElementStackInvalidK() throws  Exception {
+    public void testGetKthElementStackInvalidK() throws Exception {
         LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(5);
         int k = 20;
         performSearchTestUnsuccess(solver::getKthElementStack, head, k);
@@ -73,7 +73,7 @@ public class KthElementTest {
     }
 
     @Test
-    public void testGetKthElementRecursiveInvalidK() throws  Exception {
+    public void testGetKthElementRecursiveInvalidK() throws Exception {
         LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(5);
         int k = 20;
         performSearchTestUnsuccess(solver::getKthElementRecursively, head, k);
@@ -111,7 +111,7 @@ public class KthElementTest {
     }
 
     @Test
-    public void testGetKthElementPointerInvalidK() throws  Exception {
+    public void testGetKthElementPointerInvalidK() throws Exception {
 
         LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(5);
         int k = 20;
@@ -141,10 +141,46 @@ public class KthElementTest {
     }
 
     private void performSearchTestUnsuccess(BiFunction<LinkedListNode<String>, Integer, LinkedListNode<String>> function,
-                                          LinkedListNode<String> head,
-                                          int k) {
+                                            LinkedListNode<String> head,
+                                            int k) {
 
         LinkedListNode<String> actualKthElement = function.apply(head, k);
         assertThat(actualKthElement, is(nullValue()));
+    }
+
+    @Test
+    public void testGetKthElementCustom() throws Exception {
+        LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(5);
+        int k = 2;
+        performSearchTestSuccess(solver::getKthElementCustom, head, k);
+    }
+
+    @Test
+    public void testGetKthElementCustomEmptyList() throws Exception {
+        LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(0);
+        int k = 2;
+        performSearchTestUnsuccess(solver::getKthElementCustom, head, k);
+    }
+
+    @Test
+    public void testGetKthElementCustomSingleItemList() throws Exception {
+        LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(1);
+        int k = 0;
+        performSearchTestSuccess(solver::getKthElementCustom, head, k);
+    }
+
+    @Test
+    public void testGetKthElementCustomInvalidK() throws Exception {
+        LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(5);
+        int k = 20;
+        performSearchTestUnsuccess(solver::getKthElementCustom, head, k);
+
+    }
+
+    @Test
+    public void testGetKthElementCustomLastElement() throws Exception {
+        LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(5);
+        int k = 0;
+        performSearchTestSuccess(solver::getKthElementCustom, head, k);
     }
 }
