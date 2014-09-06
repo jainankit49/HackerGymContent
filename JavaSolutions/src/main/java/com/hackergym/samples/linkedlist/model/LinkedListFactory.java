@@ -1,6 +1,6 @@
 package com.hackergym.samples.linkedlist.model;
 
-import com.hackergym.samples.linkedlist.questions.Reverse;
+import com.hackergym.samples.linkedlist.questions.Problem1;
 
 import java.util.*;
 import java.util.stream.IntStream;
@@ -56,7 +56,7 @@ public class LinkedListFactory {
             }
             number = number / 10;
         }
-        LinkedListNode<Integer> result = new Reverse<Integer>().reverseWithPointers(head);
+        LinkedListNode<Integer> result = new Problem1<Integer>().reverseWithPointers(head);
         return result;
     }
 

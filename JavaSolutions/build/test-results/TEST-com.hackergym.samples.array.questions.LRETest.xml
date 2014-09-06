@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hackergym.samples.array.questions.LRETest" tests="5" skipped="0" failures="0" errors="0" timestamp="2014-09-06T17:07:34" hostname="Alis-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="testDecompress" classname="com.hackergym.samples.array.questions.LRETest" time="0.0"/>
+  <testcase name="testDecompressInvalidCompressedString" classname="com.hackergym.samples.array.questions.LRETest" time="0.0"/>
+  <testcase name="testDecompressInvalidCompressedStringStart" classname="com.hackergym.samples.array.questions.LRETest" time="0.001"/>
+  <testcase name="testCompress" classname="com.hackergym.samples.array.questions.LRETest" time="0.0"/>
+  <testcase name="testDecompressInvalidCompressedStringEnd" classname="com.hackergym.samples.array.questions.LRETest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

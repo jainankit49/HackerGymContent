@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hackergym.samples.array.questions.PalindromeSubstringTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2014-09-06T17:07:34" hostname="Alis-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="testFindPalindromeSubstringsEnumerationEmptyString" classname="com.hackergym.samples.array.questions.PalindromeSubstringTest" time="0.0"/>
+  <testcase name="testFindPalindromSubstringsEnumerationOddSize" classname="com.hackergym.samples.array.questions.PalindromeSubstringTest" time="0.0"/>
+  <testcase name="testFindPalindromeSubstringsGenerationEvenSize" classname="com.hackergym.samples.array.questions.PalindromeSubstringTest" time="0.0"/>
+  <testcase name="testFindPalindromSubstringsEnumerationEvenSize" classname="com.hackergym.samples.array.questions.PalindromeSubstringTest" time="0.0"/>
+  <testcase name="testFindPalindromeSubstringsGenerationNoPalindrome" classname="com.hackergym.samples.array.questions.PalindromeSubstringTest" time="0.0"/>
+  <testcase name="testFindPalindromSubstringsEnumerationNoPalindrome" classname="com.hackergym.samples.array.questions.PalindromeSubstringTest" time="0.0"/>
+  <testcase name="testFindPalindromeSubstringsGenerationOddSize" classname="com.hackergym.samples.array.questions.PalindromeSubstringTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hackergym.samples.array.questions.LongestIncreasingTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2014-09-06T17:07:34" hostname="Alis-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="testGetLongestIncreasingOptimizedWholeArray" classname="com.hackergym.samples.array.questions.LongestIncreasingTest" time="0.0"/>
+  <testcase name="testGetLongestIncreasingOptimizedUpAndDown" classname="com.hackergym.samples.array.questions.LongestIncreasingTest" time="0.0"/>
+  <testcase name="testGetLongestIncreasingOptimized" classname="com.hackergym.samples.array.questions.LongestIncreasingTest" time="0.0"/>
+  <testcase name="testGetLongestIncreasingRollingWholeArray" classname="com.hackergym.samples.array.questions.LongestIncreasingTest" time="0.0"/>
+  <testcase name="testGetLongestIncreasingOptimizedStartfromBeginning" classname="com.hackergym.samples.array.questions.LongestIncreasingTest" time="0.0"/>
+  <testcase name="testGetLongestIncreasingRollingBest" classname="com.hackergym.samples.array.questions.LongestIncreasingTest" time="0.0"/>
+  <testcase name="testGetLongestIncreasingRollingUpAndDown" classname="com.hackergym.samples.array.questions.LongestIncreasingTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

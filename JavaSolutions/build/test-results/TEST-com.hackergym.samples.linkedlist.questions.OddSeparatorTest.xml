@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.hackergym.samples.linkedlist.questions.OddSeparatorTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2014-07-29T04:30:52" hostname="Alis-MacBook-Pro.local" time="0.003">
+<testsuite name="com.hackergym.samples.linkedlist.questions.OddSeparatorTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2014-09-06T17:07:34" hostname="Alis-MacBook-Pro.local" time="0.003">
   <properties/>
   <testcase name="testSeparateOddsQueueEvenSize" classname="com.hackergym.samples.linkedlist.questions.OddSeparatorTest" time="0.001"/>
-  <testcase name="testSeparateOddsQueueOddSize" classname="com.hackergym.samples.linkedlist.questions.OddSeparatorTest" time="0.0"/>
+  <testcase name="testSeparateOddsQueueOddSize" classname="com.hackergym.samples.linkedlist.questions.OddSeparatorTest" time="0.001"/>
   <testcase name="testSeparateOddsPointersEvenSize" classname="com.hackergym.samples.linkedlist.questions.OddSeparatorTest" time="0.0"/>
   <testcase name="testSeparateOddsQueueSingleSize" classname="com.hackergym.samples.linkedlist.questions.OddSeparatorTest" time="0.0"/>
-  <testcase name="testSeparateOddsPointersOddSize" classname="com.hackergym.samples.linkedlist.questions.OddSeparatorTest" time="0.001"/>
+  <testcase name="testSeparateOddsPointersOddSize" classname="com.hackergym.samples.linkedlist.questions.OddSeparatorTest" time="0.0"/>
   <testcase name="testSeparateOddsPointersSingleSize" classname="com.hackergym.samples.linkedlist.questions.OddSeparatorTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

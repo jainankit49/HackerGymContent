@@ -11,7 +11,25 @@ import java.util.List;
  * Created by Fathalian on 6/5/14.
  * HackerGym.com
  */
-public class Reverse<T> {
+
+/**
+ * Question:
+ * Implement an algorithm that reverses a linked list.
+ * For Detailed Answer see :
+ * http://hackergym.com/#/problemView/3489afb7-9dad-4310-a907-02a265bea32c?p=1
+ */
+
+public class Problem1<T> {
+
+    /*============================================
+                    Your Custom Solution
+    ============================================*/
+    public LinkedListNode<T> reverseCustomSolution(LinkedListNode<T> head) {
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testReverseCustom
+        return reverseWithStack(head);
+    }
 
     public LinkedListNode<T> reverseWithStack(LinkedListNode<T> head) {
 

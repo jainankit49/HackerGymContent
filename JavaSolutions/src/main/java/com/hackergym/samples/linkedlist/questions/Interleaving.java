@@ -83,7 +83,7 @@ public class Interleaving<T> {
         temp = temp.next;
 
         //now reverse the second half
-        Reverse<T> reverser = new Reverse<>();
+        Problem1<T> reverser = new Problem1<>();
         //because reverse works in place we need a new copy
         BasicLinkedList<T> helper = new BasicLinkedList<>(head);
         LinkedListNode<T> midSliceCopy = helper.copyLinkedList(temp);

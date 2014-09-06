@@ -4,17 +4,17 @@ import com.hackergym.samples.linkedlist.model.LinkedListFactory;
 import com.hackergym.samples.linkedlist.model.LinkedListNode;
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.*;
-
 import java.util.Collections;
 import java.util.List;
 import java.util.function.Function;
 
-import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.nullValue;
+import static org.junit.Assert.assertThat;
 
-public class ReverseTest {
+public class Problem1Test {
 
-    private final Reverse<String> solver = new Reverse<>();
+    private final Problem1<String> solver = new Problem1<>();
 
     @Test
     public void testReverseStackNormal() throws Exception {
@@ -127,6 +127,32 @@ public class ReverseTest {
         performReverseTestSuccess(solver::reverseWithPointers, head);
 
     }
+
+    @Test
+    public void testReverseCustom() throws Exception {
+
+        LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(5);
+
+        performReverseTestSuccess(solver::reverseCustomSolution, head);
+
+    }
+
+    @Test
+    public void testReverseCustomEmpty() throws Exception {
+
+        LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(0);
+
+        performReverseTestEmpty(solver::reverseCustomSolution, head);
+    }
+
+    @Test
+    public void testReverseStackCustomSingleElement() throws Exception {
+
+        LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(1);
+
+        performReverseTestSuccess(solver::reverseCustomSolution, head);
+    }
+
     private void performReverseTestSuccess(Function<LinkedListNode<String>, LinkedListNode<String>> reverseFunction,
                                            LinkedListNode<String> head) {
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hackergym.samples.array.questions.DeleterTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2014-09-06T17:07:33" hostname="Alis-MacBook-Pro.local" time="0.003">
+  <properties/>
+  <testcase name="testDeleteWithoutMemory" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
+  <testcase name="testDeleteWithoutMemoryMultipleAtTheEnd" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
+  <testcase name="testDeleteWithoutMemoryMultipleAtTheBeginning" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.001"/>
+  <testcase name="testDeleteWithMemoryMultipleAtTheEnd" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
+  <testcase name="testDeleteWithoutMemoryNoElement" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
+  <testcase name="testDeleteWithMemoryMultipleAtTheBeginning" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
+  <testcase name="testDeleteWithMemoryMultipleBackToBack" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
+  <testcase name="testDeleteWithMemory" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
+  <testcase name="testDeleteWithoutMemoryAllElements" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.001"/>
+  <testcase name="testDeleteWithMemoryMultipleNoElement" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
+  <testcase name="testDeleteWithoutMemoryMultipleBackToBack" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
+  <testcase name="testDeleteWithoutMemorySingleInTheMiddle" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
+  <testcase name="testDeleteWithoutMemorySingleAtTheBeginning" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -72,7 +72,7 @@ public class LinkedNumbers {
         num2 = tuple.get(1);
 
         //reverse the numbers
-        Reverse<Integer> reverser = new Reverse<>();
+        Problem1<Integer> reverser = new Problem1<>();
         num1 = reverser.reverseWithPointers(num1);
         num2 = reverser.reverseWithPointers(num2);
 
@@ -128,7 +128,7 @@ public class LinkedNumbers {
         num2 = tuple.get(1);
 
         //reverse the numbers
-        Reverse<Integer> reverser = new Reverse<>();
+        Problem1<Integer> reverser = new Problem1<>();
         num1 = reverser.reverseWithPointers(num1);
         num2 = reverser.reverseWithPointers(num2);
 

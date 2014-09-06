@@ -3,8 +3,7 @@ package com.hackergym.samples.linkedlist.questions;
 import com.hackergym.samples.linkedlist.model.LinkedListNode;
 
 /**
- * Created by Fathalian on 6/5/14.
- * HackerGym.com
+ * Basic Implementation of a Linked List.
  */
 class BasicLinkedList<T> {
 

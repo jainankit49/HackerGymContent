@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hackergym.samples.linkedlist.questions.Problem1Test" tests="13" skipped="0" failures="0" errors="0" timestamp="2014-09-06T17:07:34" hostname="Alis-MacBook-Pro.local" time="0.008">
+  <properties/>
+  <testcase name="testReverseRecursiveEmpty" classname="com.hackergym.samples.linkedlist.questions.Problem1Test" time="0.001"/>
+  <testcase name="testReversePointerSingleElement" classname="com.hackergym.samples.linkedlist.questions.Problem1Test" time="0.001"/>
+  <testcase name="testReversePointerOddElements" classname="com.hackergym.samples.linkedlist.questions.Problem1Test" time="0.0"/>
+  <testcase name="testReverseRecursiveSingleElement" classname="com.hackergym.samples.linkedlist.questions.Problem1Test" time="0.001"/>
+  <testcase name="testReversePointerThreeElements" classname="com.hackergym.samples.linkedlist.questions.Problem1Test" time="0.0"/>
+  <testcase name="testReversePointerEmpty" classname="com.hackergym.samples.linkedlist.questions.Problem1Test" time="0.001"/>
+  <testcase name="testReverseStackNormal" classname="com.hackergym.samples.linkedlist.questions.Problem1Test" time="0.0"/>
+  <testcase name="testReversePointerEvenElements" classname="com.hackergym.samples.linkedlist.questions.Problem1Test" time="0.001"/>
+  <testcase name="testReverseStackEmpty" classname="com.hackergym.samples.linkedlist.questions.Problem1Test" time="0.0"/>
+  <testcase name="testReversePointerTwoElements" classname="com.hackergym.samples.linkedlist.questions.Problem1Test" time="0.001"/>
+  <testcase name="testReverseRecursiveNormal" classname="com.hackergym.samples.linkedlist.questions.Problem1Test" time="0.0"/>
+  <testcase name="testReverseStackSingleElement" classname="com.hackergym.samples.linkedlist.questions.Problem1Test" time="0.002"/>
+  <testcase name="testReversePointerNormal" classname="com.hackergym.samples.linkedlist.questions.Problem1Test" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hackergym.samples.array.questions.PivotTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2014-09-06T17:07:34" hostname="Alis-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="testPerformPivot" classname="com.hackergym.samples.array.questions.PivotTest" time="0.001"/>
+  <testcase name="testPerformPivotAllOnRight" classname="com.hackergym.samples.array.questions.PivotTest" time="0.0"/>
+  <testcase name="testPerformPivotAllOnLeft" classname="com.hackergym.samples.array.questions.PivotTest" time="0.0"/>
+  <testcase name="testPerformPivotAlreadyPivoted" classname="com.hackergym.samples.array.questions.PivotTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -18,7 +18,7 @@ public class Palindrome {
         //a single element list is always palindrome
         if (head.next == null) return true;
 
-        Reverse<String> reverser = new Reverse<>();
+        Problem1<String> reverser = new Problem1<>();
         //because reverse works in place we need a new copy
         BasicLinkedList<String> helper = new BasicLinkedList<>(head);
         LinkedListNode<String> headCopy = helper.copyLinkedList(head);
@@ -49,7 +49,7 @@ public class Palindrome {
         temp = temp.next;
 
         //now reverse the second half
-        Reverse<String> reverser = new Reverse<>();
+        Problem1<String> reverser = new Problem1<>();
         temp = reverser.reverseWithPointers(temp);
 
         while (temp != null) {

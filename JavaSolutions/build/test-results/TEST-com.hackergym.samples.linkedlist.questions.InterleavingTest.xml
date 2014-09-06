@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.hackergym.samples.linkedlist.questions.InterleavingTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2014-07-29T04:30:52" hostname="Alis-MacBook-Pro.local" time="0.045">
+<testsuite name="com.hackergym.samples.linkedlist.questions.InterleavingTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2014-09-06T17:07:34" hostname="Alis-MacBook-Pro.local" time="0.006">
   <properties/>
-  <testcase name="testInterleaveStackOdd" classname="com.hackergym.samples.linkedlist.questions.InterleavingTest" time="0.042"/>
-  <testcase name="testInterleaveSingleElement" classname="com.hackergym.samples.linkedlist.questions.InterleavingTest" time="0.001"/>
-  <testcase name="testInterleaveStackEvent" classname="com.hackergym.samples.linkedlist.questions.InterleavingTest" time="0.0"/>
-  <testcase name="testInterleaveReverseEven" classname="com.hackergym.samples.linkedlist.questions.InterleavingTest" time="0.001"/>
+  <testcase name="testInterleaveStackOdd" classname="com.hackergym.samples.linkedlist.questions.InterleavingTest" time="0.002"/>
+  <testcase name="testInterleaveSingleElement" classname="com.hackergym.samples.linkedlist.questions.InterleavingTest" time="0.0"/>
+  <testcase name="testInterleaveStackEvent" classname="com.hackergym.samples.linkedlist.questions.InterleavingTest" time="0.001"/>
+  <testcase name="testInterleaveReverseEven" classname="com.hackergym.samples.linkedlist.questions.InterleavingTest" time="0.002"/>
   <testcase name="testInterleaveReverseOdd" classname="com.hackergym.samples.linkedlist.questions.InterleavingTest" time="0.0"/>
   <testcase name="testInterleaveSingle" classname="com.hackergym.samples.linkedlist.questions.InterleavingTest" time="0.001"/>
   <system-out><![CDATA[[0, 8, 1, 7, 2, 6, 3, 5, 4]
