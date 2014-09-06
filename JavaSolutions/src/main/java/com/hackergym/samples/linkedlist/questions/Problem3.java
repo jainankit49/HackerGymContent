@@ -11,6 +11,7 @@ import com.hackergym.samples.linkedlist.model.LinkedListNode;
  * Question:
  * Write an algorithm to find the middle of a linked list.
  * If the list is even-sized, the middle is the node that is closer to the beginning.
+ *
  * For detailed answer see:
  * http://hackergym.com/#/problemView/3489afb7-9dad-4310-a907-02a265bea32c?p=3
  */
