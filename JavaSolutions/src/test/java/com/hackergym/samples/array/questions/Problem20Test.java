@@ -5,9 +5,9 @@ import org.junit.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-public class SubstringTest {
+public class Problem20Test {
 
-    Substring finder =new Substring();
+    Problem20 finder =new Problem20();
     @Test
     public void testFindSubstringBruteForce() throws Exception {
 
@@ -142,6 +142,75 @@ public class SubstringTest {
 
         //Act
         int index = finder.findSubstringRabinKarp(text, searchString);
+
+        //Assert
+        assertThat(index, is(-1));
+    }
+
+    @Test
+    public void testFindSubstringCustom() throws Exception {
+        //Assert
+        String text = "I Have forgotten my brain";
+//        String text = "It seems that I have forgotten to take a shower today";
+        String searchString = "forgotten";
+
+        //Act
+        int index = finder.findSubstringCustom(text, searchString);
+
+        //Assert
+        assertThat(index, is(text.indexOf(searchString)));
+    }
+
+
+    @Test
+    public void testFindSubstringCustomAtThEnd() throws Exception {
+        //Assert
+        String text = "It seems that I have forgotten to take a shower today";
+        String searchString = "today";
+
+        //Act
+        int index = finder.findSubstringCustom(text, searchString);
+
+        //Assert
+        assertThat(index, is(text.indexOf(searchString)));
+    }
+    @Test
+    public void testFindSubstringCustomNonExisting() throws Exception {
+        //Assert
+        String text = "It seems that I have forgotten to take a shower today";
+        String searchString = "Coffee";
+
+        //Act
+        int index = finder.findSubstringCustom(text, searchString);
+
+        //Assert
+        assertThat(index, is(-1));
+    }
+
+    @Test
+    public void testFindSubstringCustomRepeatingCharacters() throws Exception {
+        //Assert
+        String text = "It seems that I have PPPPPPP to take a shower today";
+        String searchString = "PPPPPPP";
+
+        //Act
+        int index = finder.findSubstringCustom(text, searchString);
+
+        //Assert
+        //Assert
+        assertThat(index, is(text.indexOf(searchString)));
+
+    }
+
+    @Test
+    public void testFindSubstringCustomLongerSubstring() throws Exception {
+
+        //Assert
+        String text = "It seems that I have forgotten to take a shower today";
+        String searchString = "Well, maybe you shouldn't have taken that pill last night";
+
+        //Act
+        int index = finder.findSubstringCustom(text, searchString);
 
         //Assert
         assertThat(index, is(-1));

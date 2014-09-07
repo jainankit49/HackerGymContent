@@ -4,7 +4,28 @@ package com.hackergym.samples.array.questions;
  * Created by Fathalian on 8/6/14.
  * HackerGym.com
  */
-public class Substring {
+
+/**
+ * Given a search string s and another string t,
+ * write an algorithm that returns the index of the first occurrence of s in t, if any at all.
+ *
+ * For more detailed solution:
+ * http://stage.hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=20
+ */
+
+public class Problem20 {
+
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public int findSubstringCustom(String text, String search) {
+
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testFindSubStringCustom
+        return findSubstringBruteForce(text, search);
+    }
 
     public int findSubstringBruteForce(String text, String search) {
 
