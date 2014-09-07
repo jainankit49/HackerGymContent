@@ -9,7 +9,32 @@ import java.util.Deque;
  * Created by Fathalian on 8/7/14.
  * HackerGym.com
  */
-public class Painter {
+
+/**
+ * In this problem, we are going to implement the fill function of a paint program.
+ * Imagine a two dimensional array representing the screen.
+ * The element at the i-th row and j-th column is represented by s[i][j] and is
+ * set to true if the corresponding cell on the screen has a color.
+ * Given a cell, s[i][j], color the area that bounds that point.
+ *
+ * For more detailed solution see:
+ * http://stage.hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=21
+ */
+
+public class Problem21 {
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public boolean[][] paintCustom(boolean[][] screen,
+                                   int startRow,
+                                   int startCol) {
+
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testPainCustom
+        return paintRecursive(screen, startRow, startCol);
+    }
 
     public boolean[][] paintRecursive(boolean[][] screen,
                                       int startRow,

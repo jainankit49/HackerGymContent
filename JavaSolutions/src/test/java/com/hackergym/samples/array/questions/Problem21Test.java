@@ -5,9 +5,9 @@ import org.junit.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-public class PainterTest {
+public class Problem21Test {
 
-    Painter painter = new Painter();
+    Problem21 painter = new Problem21();
 
     @Test
     public void testPaintRecursive() throws Exception {
@@ -217,6 +217,114 @@ public class PainterTest {
 
         boolean[][] converted = convertString(screen);
         boolean[][] actual = painter.paintQueue(converted, 2, 6);
+
+        String[] actualConverted = convertToString(actual);
+
+        assertThat(actualConverted, is(result));
+
+    }
+
+    @Test
+    public void testPaintCustom() throws Exception {
+
+        String[] screen =
+                {
+                        "--****---*-*",
+                        "--*----****-",
+                        "--*-------*-",
+                        "--*-****----",
+                        "--*-*--*---*",
+                        "--*-*--****-",
+                        "--*-*------*",
+                        "--***-------",
+                };
+
+        String[] result =
+                {
+                        "--********-*",
+                        "--**********",
+                        "--**********",
+                        "--**********",
+                        "--***--*****",
+                        "--***--****-",
+                        "--***------*",
+                        "--***-------",
+                };
+
+
+        boolean[][] converted = convertString(screen);
+        boolean[][] actual = painter.paintCustom(converted, 2, 6);
+
+        String[] actualConverted = convertToString(actual);
+
+        assertThat(actualConverted, is(result));
+    }
+
+    @Test
+    public void testPaintCustomEmpty() throws Exception {
+
+        String[] screen =
+                {
+                        "------------",
+                        "------------",
+                        "------------",
+                        "------------",
+                        "------------",
+                        "------------",
+                        "------------",
+                        "------------",
+                };
+
+        String[] result =
+                {
+                        "************",
+                        "************",
+                        "************",
+                        "************",
+                        "************",
+                        "************",
+                        "************",
+                        "************",
+                };
+
+        boolean[][] converted = convertString(screen);
+        boolean[][] actual = painter.paintCustom(converted, 2, 6);
+
+        String[] actualConverted = convertToString(actual);
+
+        assertThat(actualConverted, is(result));
+
+    }
+
+    @Test
+    public void testPaintCustomFull() throws Exception {
+
+        String[] screen =
+                {
+                        "************",
+                        "************",
+                        "************",
+                        "************",
+                        "************",
+                        "************",
+                        "************",
+                        "************",
+                };
+
+        String[] result =
+                {
+                        "************",
+                        "************",
+                        "************",
+                        "************",
+                        "************",
+                        "************",
+                        "************",
+                        "************",
+                };
+
+        boolean[][] converted = convertString(screen);
+        boolean[][] actual = painter.paintCustom(converted, 2, 6);
 
         String[] actualConverted = convertToString(actual);
 
