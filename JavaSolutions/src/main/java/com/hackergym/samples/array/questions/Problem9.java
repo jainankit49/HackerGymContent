@@ -10,7 +10,29 @@ import java.util.stream.Collectors;
  * Created by Fathalian on 7/28/14.
  * HackerGym.com
  */
-public class PagedArray {
+
+/**
+ * A Paged Array of size x is an array in which each element is a Page.
+ * Respectively, a Page is an array which contains x elements.
+ * In a Paged Array, only the last Page may have less than x elements.
+ *
+ * Imagine you have a Paged Array but don’t know the number of pages.
+ * Implement the insert method with the following prototype:
+ *
+ *
+ *  Adds element “e” inside a page with index “pageNo”, at the index “elementIndex” of that page.
+ * public void insertElement (int pageNo, int elementIndex, Element e);
+ */
+
+public class Problem9 {
+
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    /**
+     * Replace all public methods with your custom code.
+     */
 
     private int maxPageSize;
 
@@ -18,7 +40,7 @@ public class PagedArray {
     //can stop worrying about resizing.
     final private List<List<Element>> elements = new ArrayList<>();
 
-    public PagedArray(int maxPageSize) {
+    public Problem9(int maxPageSize) {
         if (maxPageSize == 0) throw new IllegalArgumentException("maxPageSize cannot be 0");
         this.maxPageSize = maxPageSize;
     }
