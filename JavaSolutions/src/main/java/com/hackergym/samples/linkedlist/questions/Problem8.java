@@ -6,8 +6,24 @@ import com.hackergym.samples.linkedlist.model.LinkedListNode;
  * Created by Fathalian on 6/6/14.
  * HackerGym.com
  */
-public class Merge<T extends Comparable> {
 
+/**
+ * The merge sort algorithm involves merging two lists that have been sorted individually.
+ * Imagine that you have two individually sorted lists. Write a function that merges those two lists.
+ *
+ * For more detailed answer see:
+ * http://hackergym.com/#/problemView/3489afb7-9dad-4310-a907-02a265bea32c?p=8
+ */
+public class Problem8<T extends Comparable> {
+
+    public LinkedListNode<T> mergeCustom(LinkedListNode<T> head1,
+                                   LinkedListNode<T> head2) {
+
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testMergeCustom
+        return merge(head1, head2);
+    }
     public LinkedListNode<T> merge(LinkedListNode<T> head1,
                                    LinkedListNode<T> head2) {
 
