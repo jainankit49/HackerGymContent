@@ -9,13 +9,13 @@ import java.util.Map;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-public class TranslatorTest {
+public class Problem11Test {
 
 
-    private Translator translator;
+    private Problem11 translator;
     @Before
     public void prepeare() {
-        translator = new Translator(createDictionary());
+        translator = new Problem11(createDictionary());
     }
 
     @Test
@@ -46,6 +46,37 @@ public class TranslatorTest {
     @Test
     public void testTranslateMultipleWordsLongWord() throws Exception {
         assertThat(translator.translateMultipleWords("Excuse me, can I help you with something?"),
+                is("chete?"));
+    }
+
+    @Test
+    public void testTranslateSingleWordCustom() throws Exception {
+
+        assertThat(translator.translateSingleWordCustom("I Love Mondays"),
+                is("man doost daram doshanbe"));
+    }
+
+    @Test
+    public void testTranslateSingleWordCustomSomeWordsWtihNoTranslation() throws Exception {
+        assertThat(translator.translateSingleWordCustom("I Love HackerGym alot"),
+                is("man doost daram hackergym kheilee"));
+    }
+
+    @Test
+    public void testTranslateMultipleWordsCustom() throws Exception {
+        assertThat(translator.translateMultipleWordsCustom("That thing is huge"),
+                is("oon bozorge"));
+    }
+
+    @Test
+    public void testTranslateMultipleWordsCustomSomeWordsWithNoTranslation() throws Exception {
+        assertThat(translator.translateMultipleWordsCustom("Jack is huge"),
+                is("jack bozorge"));
+    }
+
+    @Test
+    public void testTranslateMultipleWordsCustomLongWord() throws Exception {
+        assertThat(translator.translateMultipleWordsCustom("Excuse me, can I help you with something?"),
                 is("chete?"));
     }
 

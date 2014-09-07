@@ -10,12 +10,42 @@ import java.util.Map;
  * Created by Fathalian on 7/31/14.
  * HackerGym.com
  */
-public class Translator {
+public class Problem11 {
 
+    /**
+     * Given a sentence and a dictionary (in any form that you see fit),
+     * write code to translate that sentence word by word.
+     * You are not allowed to use dynamic arrays or any of the utility methods on
+     * the String object (like Split).
+     * You can assume that the input string is well formed and does not have any extra whitespaces.
+     *
+     * For more detailed solution see:
+     * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=11
+     */
     private Map<String, String> dictionary;
 
-    public Translator(Map<String, String> dictionary) {
+    public Problem11(Map<String, String> dictionary) {
         this.dictionary = dictionary;
+    }
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public String translateSingleWordCustom(String sentence) {
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testTranslateSingleWordCustom
+        return translateSingleWord(sentence);
+    }
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public String translateMultipleWordsCustom(String sentence) {
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testTranslateMultipleWords
+        return translateMultipleWords(sentence);
     }
 
     public String translateSingleWord(String sentence) {
