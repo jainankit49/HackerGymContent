@@ -4,7 +4,17 @@ package com.hackergym.samples.array.questions;
  * Created by Fathalian on 7/31/14.
  * HackerGym.com
  */
-public class StockPrice {
+
+/**
+ * You have an array that contains stock prices for a sequence of days.
+ * The value at index i of this array is the price of a stock on day i.
+ * Given this array, you can buy only a single stock.
+ * Find the best pair of purchase and sale days that yields the most profits.
+ *
+ * For more detailed solution see:
+ * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=12
+ */
+public class Problem12 {
 
     /**
      * You may design a better class for this, here for the
@@ -20,6 +30,17 @@ public class StockPrice {
             this.sellDay = sellDay;
             this.profit = profit;
         }
+    }
+
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public Deal getBestDealCustom(int[] stockChart) {
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testGetBestDealCustom
+        return getBestDealEnumeration(stockChart);
     }
 
     public Deal getBestDealEnumeration(int[] stockChart) {
