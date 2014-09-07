@@ -9,9 +9,9 @@ import java.util.function.BiFunction;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
-public class LinkedNumbersTest {
+public class Problem10Test {
 
-    LinkedNumbers solver = new LinkedNumbers();
+    Problem10 solver = new Problem10();
 
     @Test
     public void testSumEqualLength() throws Exception {
@@ -59,6 +59,29 @@ public class LinkedNumbersTest {
     }
 
     @Test
+    public void testSumCustomEqualLength() throws Exception {
+
+        int num1 = 902;
+        int num2 = 942;
+        testPerformOperation(solver::sumCustom, num1, num2, num1 + num2);
+    }
+
+    @Test
+    public void testSumCustomNonEqualLength() throws Exception {
+
+        int num1 = 162;
+        int num2 = 9942;
+        testPerformOperation(solver::sumCustom, num1, num2, num1 + num2);
+    }
+
+    @Test
+    public void testSumCustomCarry() throws Exception {
+        int num1 = 987;
+        int num2 = 9877;
+        testPerformOperation(solver::sumCustom, num1, num2, num1 + num2);
+    }
+
+    @Test
     public void testSubtractEqualLength() throws Exception {
         int num1 = 192;
         int num2 = 102;
@@ -85,6 +108,34 @@ public class LinkedNumbersTest {
         int num1 = 1000;
         int num2 = 9;
         testPerformOperation(solver::subtract, num1, num2, num1 - num2);
+    }
+    @Test
+    public void testSubtractCustomBorrow() throws Exception {
+        int num1 = 1000;
+        int num2 = 9;
+        testPerformOperation(solver::subtractCustom, num1, num2, num1 - num2);
+    }
+
+    @Test
+    public void testSubtractCustomEqualLength() throws Exception {
+        int num1 = 192;
+        int num2 = 102;
+        testPerformOperation(solver::subtractCustom, num1, num2, num1 - num2);
+    }
+
+    @Test
+    public void testSubtractCustomNonEqualLength() throws Exception {
+        int num1 = 8192;
+        int num2 = 102;
+        testPerformOperation(solver::subtractCustom, num1, num2, num1 - num2);
+    }
+
+    @Test
+    public void testSubtractCustomSmallerFirst() throws Exception {
+        int num1 = 8192;
+        int num2 = 102;
+        testPerformOperation(solver::subtractCustom, num2, num1, num1 - num2);
+
     }
 
     private void testPerformOperation(BiFunction<LinkedListNode<Integer>, LinkedListNode<Integer>, LinkedListNode<Integer>> function,

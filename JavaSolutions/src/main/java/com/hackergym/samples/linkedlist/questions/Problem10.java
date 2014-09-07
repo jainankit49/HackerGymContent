@@ -11,7 +11,37 @@ import java.util.List;
  * Created by Fathalian on 6/6/14.
  * HackerGym.com
  */
-public class LinkedNumbers {
+
+/**
+ *You are given two numbers that are represented by a linked list (123 is 1->2->3).
+ * Write an algorithm that sums and subtracts them.
+ * Note that you can’t convert the linked list to a number and back.
+ *
+ * For more detailed answer see:
+ * http://hackergym.com/#/problemView/3489afb7-9dad-4310-a907-02a265bea32c?p=10
+ */
+
+public class Problem10 {
+
+
+    public LinkedListNode<Integer> sumCustom(LinkedListNode<Integer> num1,
+                                       LinkedListNode<Integer> num2) {
+
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testSumCustom
+        return sum(num1, num2);
+    }
+
+
+    public LinkedListNode<Integer> subtractCustom(LinkedListNode<Integer> num1,
+                                            LinkedListNode<Integer> num2) {
+
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testSubtractCustom
+        return subtract(num1, num2);
+    }
 
     public LinkedListNode<Integer> sum(LinkedListNode<Integer> num1,
                                        LinkedListNode<Integer> num2) {
