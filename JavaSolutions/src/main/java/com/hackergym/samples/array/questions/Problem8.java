@@ -7,7 +7,27 @@ import java.util.Set;
  * Created by Fathalian on 7/30/14.
  * HackerGym.com
  */
-public class MatrixZeroer {
+
+/**
+ * A matrix is an array of arrays.
+ * Given a matrix, write an algorithm that if the value of the i-th row and j-th column is zero,
+ * it puts zero for the whole i-th row and the whole j-th column.
+ *
+ * For more detailed solution see:
+ * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=8
+ */
+
+public class Problem8 {
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public int[][] zeroMatrixCustom(int[][] matrix) {
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testZeroMatrixCustom
+        return zeroMatrix(matrix);
+    }
 
     public int[][] zeroMatrix(int[][] matrix) {
 

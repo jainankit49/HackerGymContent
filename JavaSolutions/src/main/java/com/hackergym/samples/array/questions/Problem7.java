@@ -12,7 +12,7 @@ package com.hackergym.samples.array.questions;
  * Implement RLE algorithm for compression and decompression of strings.
  *
  * For more detailed solution see:
- * http://stage.hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=7
+ * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=7
  */
 
 public class Problem7 {

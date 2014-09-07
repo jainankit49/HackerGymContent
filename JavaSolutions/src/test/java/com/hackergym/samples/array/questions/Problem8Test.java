@@ -10,9 +10,9 @@ import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-public class MatrixZeroerTest {
+public class Problem8Test {
 
-    MatrixZeroer zeroer = new MatrixZeroer();
+    Problem8 zeroer = new Problem8();
 
     @Test
     public void testZeroMatrix() throws Exception {
@@ -74,6 +74,65 @@ public class MatrixZeroerTest {
 
     }
 
+    @Test
+    public void testZeroMatrixCustom() throws Exception {
+        List<Pair<Integer, Integer>> zeroElements = Arrays.asList(
+                new Pair<>(0, 1),
+                new Pair<>(2, 0));
+
+        int size = 3;
+        int[][] matrix = matrixWithZerosAt(size, zeroElements);
+        matrix = zeroer.zeroMatrixCustom(matrix);
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                if (i == 0 || i == 2 || j == 1 || j == 0) {
+                    assertThat(matrix[i][j], is(0));
+                } else {
+                    assertThat(matrix[i][j], not(0));
+                }
+            }
+        }
+    }
+
+    @Test
+    public void testZeroMatrixCustomConsecutiveZeros() throws Exception {
+
+        List<Pair<Integer, Integer>> zeroElements = Arrays.asList(
+                new Pair<>(0, 1),
+                new Pair<>(0, 2));
+
+        int size = 3;
+        int[][] matrix = matrixWithZerosAt(size, zeroElements);
+        matrix = zeroer.zeroMatrixCustom(matrix);
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                if (i == 0 || j == 1 || j == 2) {
+                    assertThat(matrix[i][j], is(0));
+                } else {
+                    assertThat(matrix[i][j], not(0));
+                }
+            }
+        }
+    }
+
+    @Test
+    public void testZeroMatrixCustomNoZeros() throws Exception {
+
+        List<Pair<Integer, Integer>> zeroElements = Arrays.asList();
+
+        int size = 3;
+        int[][] matrix = matrixWithZerosAt(size, zeroElements);
+        matrix = zeroer.zeroMatrixCustom(matrix);
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                assertThat(matrix[i][j], not(0));
+            }
+        }
+
+    }
 
     private int[][] matrixWithZerosAt(int size, List<Pair<Integer, Integer>> zeros) {
 
