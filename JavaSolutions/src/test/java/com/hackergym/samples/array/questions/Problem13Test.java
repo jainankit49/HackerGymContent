@@ -5,9 +5,9 @@ import org.junit.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-public class MaximumSubarrayTest {
+public class Problem13Test {
 
-    MaximumSubarray finder = new MaximumSubarray();
+    Problem13 finder = new Problem13();
 
     @Test
     public void testFindMaximumSubarrayEnumeration() throws Exception {
@@ -16,7 +16,7 @@ public class MaximumSubarrayTest {
         int[] array = {1, -2, 4, -1, -2, 5, -3};
 
         //Act
-        MaximumSubarray.SubarraySum result = finder.findMaximumSubarrayEnumeration(array);
+        Problem13.SubarraySum result = finder.findMaximumSubarrayEnumeration(array);
 
         //Assert
         assertThat(result.sum, is(6));
@@ -30,7 +30,7 @@ public class MaximumSubarrayTest {
         int[] array = {-1, -2, -3, 1, -2, -5, -3};
 
         //Act
-        MaximumSubarray.SubarraySum result = finder.findMaximumSubarrayEnumeration(array);
+        Problem13.SubarraySum result = finder.findMaximumSubarrayEnumeration(array);
 
         //Assert
         assertThat(result.sum, is(1));
@@ -44,7 +44,7 @@ public class MaximumSubarrayTest {
         int[] array = {-1, -2, -3, -1, -2, -5, -3};
 
         //Act
-        MaximumSubarray.SubarraySum result = finder.findMaximumSubarrayEnumeration(array);
+        Problem13.SubarraySum result = finder.findMaximumSubarrayEnumeration(array);
 
         //Assert
         assertThat(result.sum, is(0));
@@ -57,7 +57,7 @@ public class MaximumSubarrayTest {
         int[] array = {1, -2, 4, -1, -2, 5, -3};
 
         //Act
-        MaximumSubarray.SubarraySum result = finder.findMaximumSubarrayLinear(array);
+        Problem13.SubarraySum result = finder.findMaximumSubarrayLinear(array);
 
         //Assert
         assertThat(result.sum, is(6));
@@ -72,7 +72,7 @@ public class MaximumSubarrayTest {
         int[] array = {-1, -2, -3, -1, -2, -5, -3};
 
         //Act
-        MaximumSubarray.SubarraySum result = finder.findMaximumSubarrayLinear(array);
+        Problem13.SubarraySum result = finder.findMaximumSubarrayLinear(array);
 
         //Assert
         assertThat(result.sum, is(0));
@@ -85,12 +85,53 @@ public class MaximumSubarrayTest {
         int[] array = {-1, -2, -3, 1, -2, -5, -3};
 
         //Act
-        MaximumSubarray.SubarraySum result = finder.findMaximumSubarrayLinear(array);
+        Problem13.SubarraySum result = finder.findMaximumSubarrayLinear(array);
 
         //Assert
         assertThat(result.sum, is(1));
         assertThat(result.startIndex, is(3));
         assertThat(result.endIndex, is(3));
 
+    }
+
+    @Test
+    public void testFindMaximumSubarrayCustom() throws Exception {
+
+        //Arrange
+        int[] array = {1, -2, 4, -1, -2, 5, -3};
+
+        //Act
+        Problem13.SubarraySum result = finder.findMaximumSubarrayCustom(array);
+
+        //Assert
+        assertThat(result.sum, is(6));
+        assertThat(result.startIndex, is(2));
+        assertThat(result.endIndex, is(5));
+    }
+
+    @Test
+    public void testFindMaximumSubarrayCustomAllNegativeButOne() throws Exception {
+
+        int[] array = {-1, -2, -3, 1, -2, -5, -3};
+
+        //Act
+        Problem13.SubarraySum result = finder.findMaximumSubarrayCustom(array);
+
+        //Assert
+        assertThat(result.sum, is(1));
+        assertThat(result.startIndex, is(3));
+        assertThat(result.endIndex, is(3));
+    }
+
+    @Test
+    public void testFindMaximumSubarrayCustomEmptyArrayResult() throws Exception {
+
+        int[] array = {-1, -2, -3, -1, -2, -5, -3};
+
+        //Act
+        Problem13.SubarraySum result = finder.findMaximumSubarrayCustom(array);
+
+        //Assert
+        assertThat(result.sum, is(0));
     }
 }

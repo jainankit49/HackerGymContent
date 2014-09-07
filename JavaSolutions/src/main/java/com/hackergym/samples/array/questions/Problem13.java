@@ -4,7 +4,19 @@ package com.hackergym.samples.array.questions;
  * Created by Fathalian on 8/1/14.
  * HackerGym.com
  */
-public class MaximumSubarray {
+
+/**
+ * Given an array of both positive and negative integers,
+ * find a continuous sub array of it that contains the maximum sum.
+ * Example: {1, -2, 3, 4}
+ * The continuous sub-array with maximum sum is {3, 4}.
+ * The sub-array {1, 3, 4} gives the most sum overall but is not continuous.
+ * Note that an empty array is an acceptable answer and has a sum of zero.
+ *
+ * For more detailed solution see:
+ * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=13
+ */
+public class Problem13 {
 
     /**
      * You may design a better class for this.
@@ -21,6 +33,18 @@ public class MaximumSubarray {
             this.endIndex = endIndex;
             this.sum = sum;
         }
+    }
+
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public SubarraySum findMaximumSubarrayCustom(int[] array) {
+
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testFindMaximumSubarrayCustom
+        return findMaximumSubarrayEnumeration(array);
     }
 
     public SubarraySum findMaximumSubarrayEnumeration(int[] array) {
