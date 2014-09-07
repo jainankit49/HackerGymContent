@@ -9,7 +9,28 @@ import java.util.Set;
  * Created by Fathalian on 6/8/14.
  * HackerGym.com
  */
-public class IntersectDetector<T> {
+
+/**
+ * Imagine two linked lists of different sizes that merge at a single point.
+ * Write an algorithm to find the merging point
+ *
+ * For more detailed answer see:
+ * http://hackergym.com/#/problemView/3489afb7-9dad-4310-a907-02a265bea32c?p=15
+ */
+
+public class Problem15<T> {
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public LinkedListNode<T> detectIntersectionCustom(LinkedListNode<T> head1,
+                                                        LinkedListNode<T> head2) {
+
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testDetectIntersectionCustom
+        return detectIntersectionWithHash(head1, head2);
+    }
 
     /**
      * finds the intersection of two linked list if one exists

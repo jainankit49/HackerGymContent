@@ -11,9 +11,9 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.nullValue;
 import static org.junit.Assert.*;
 
-public class IntersectDetectorTest {
+public class Problem15Test {
 
-    IntersectDetector<String> solver = new IntersectDetector<>();
+    Problem15<String> solver = new Problem15<>();
 
     @Test
     public void testDetectIntersectionWithHashEqualSize() throws Exception {
@@ -118,6 +118,58 @@ public class IntersectDetectorTest {
         LinkedListNode<String> head2 = LinkedListFactory.generateStringLinkedList(6);
         LinkedListNode<String> intersection = solver.detectIntersectionWithHash(head1, head2);
         assertThat(intersection, nullValue());
+
+    }
+
+    @Test
+    public void testDetectIntersectionCustomEqualSize() throws Exception {
+        int sharedIndexInList1 = 3;
+        Pair<LinkedListNode<String>, LinkedListNode<String>> pair = LinkedListFactory.
+                generateIntersectingLinkedLists(7, 7, sharedIndexInList1);
+
+        testIntersection(
+                solver::detectIntersectionCustom,
+                pair.fst,
+                pair.snd,
+                sharedIndexInList1);
+    }
+
+
+    @Test
+    public void testDetectIntersectionCustomDifferentSizes() throws Exception {
+
+        int sharedIndexInList1 = 3;
+        Pair<LinkedListNode<String>, LinkedListNode<String>> pair = LinkedListFactory.
+                generateIntersectingLinkedLists(7, 6, sharedIndexInList1);
+
+        testIntersection(
+                solver::detectIntersectionCustom,
+                pair.fst,
+                pair.snd,
+                sharedIndexInList1);
+
+    }
+
+    @Test
+    public void testDetectIntersectionCustomNotIntersecting() throws Exception {
+
+        LinkedListNode<String> head1 = LinkedListFactory.generateStringLinkedList(5);
+        LinkedListNode<String> head2 = LinkedListFactory.generateStringLinkedList(6);
+        LinkedListNode<String> intersection = solver.detectIntersectionCustom(head1, head2);
+        assertThat(intersection, nullValue());
+    }
+
+    @Test
+    public void testDetectIntersectionCustomIntersectAtBeginning() throws Exception {
+        int sharedIndexInList1 = 0;
+        Pair<LinkedListNode<String>, LinkedListNode<String>> pair = LinkedListFactory.
+                generateIntersectingLinkedLists(12, 15, sharedIndexInList1);
+
+        testIntersection(
+                solver::detectIntersectionCustom,
+                pair.fst,
+                pair.snd,
+                sharedIndexInList1);
 
     }
 
