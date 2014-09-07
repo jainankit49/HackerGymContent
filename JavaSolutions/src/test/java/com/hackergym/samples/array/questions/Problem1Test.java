@@ -9,9 +9,10 @@ import java.util.Set;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-public class PalindromeSubstringTest {
+public class Problem1Test {
 
-    PalindromeSubstring palindromeFinder = new PalindromeSubstring();
+    Problem1 palindromeFinder = new Problem1();
+
     @Test
     public void testFindPalindromSubstringsEnumerationEvenSize() throws Exception {
         String s = "aabbaa";
@@ -69,6 +70,41 @@ public class PalindromeSubstringTest {
     public void testFindPalindromeSubstringsGenerationNoPalindrome() throws Exception {
         String s = "abcde";
         Set<String> actualResult = palindromeFinder.findPalindromeSubstringsGeneration(s);
+
+        assertThat(actualResult.size(), is(0));
+    }
+
+    @Test
+    public void testFindPalindromSubstringsCustomEvenSize() throws Exception {
+        String s = "aabbaa";
+        Set<String> expectedResult = new HashSet<>(Arrays.asList("aa","bb", "abba",  "aabbaa"));
+        Set<String> actualResult = palindromeFinder.findPalindromSubstringsCustom(s);
+
+        assertThat(actualResult, is(expectedResult));
+    }
+
+    @Test
+    public void testFindPalindromSubstringsCustomOddSize() throws Exception {
+        String s = "aabbbaa";
+        Set<String> expectedResult = new HashSet(Arrays.asList("aa","bb", "bbb", "abbba",  "aabbbaa"));
+        Set<String> actualResult = palindromeFinder.findPalindromSubstringsCustom(s);
+
+        assertThat(expectedResult, is(actualResult));
+    }
+
+    @Test
+    public void testFindPalindromSubstringsCustomNoPalindrome() throws Exception {
+
+        String s = "abcde";
+        Set<String> actualResult = palindromeFinder.findPalindromSubstringsCustom(s);
+
+        assertThat(actualResult.size(), is(0));
+    }
+
+    @Test
+    public void testFindPalindromeSubstringsCustomEmptyString() throws Exception {
+        String s = "";
+        Set<String> actualResult = palindromeFinder.findPalindromSubstringsCustom(s);
 
         assertThat(actualResult.size(), is(0));
     }

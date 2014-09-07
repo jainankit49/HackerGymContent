@@ -7,7 +7,28 @@ import java.util.Set;
  * Created by Fathalian on 7/30/14.
  * HackerGym.com
  */
-public class PalindromeSubstring {
+
+/**
+ * Given a string find all the substrings of it that are palindrome.
+ * aabbbaa :
+ * aa – bb – bbb- abbba- aabbbaa
+ *
+ * For more detailed answer see:
+ * http://stage.hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=1
+ */
+
+public class Problem1 {
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public Set<String> findPalindromSubstringsCustom(String s) {
+
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testFindPalindromeSubstringsCustom
+        return findPalindromSubstringsEnumeration(s);
+    }
 
     public Set<String> findPalindromSubstringsEnumeration(String s) {
 
