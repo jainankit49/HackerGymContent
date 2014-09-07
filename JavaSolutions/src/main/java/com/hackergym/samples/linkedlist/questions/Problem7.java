@@ -19,6 +19,9 @@ import com.hackergym.samples.linkedlist.model.Pair;
  */
 public class Problem7<T> {
 
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
     public Pair<BigListNode<T>, BigListNode<T>> flattenListCustom(BigListNode<T> head) {
 
         //comment out the line below and add your own solution

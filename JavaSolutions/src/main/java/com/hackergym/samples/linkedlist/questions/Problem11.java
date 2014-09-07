@@ -2,7 +2,6 @@ package com.hackergym.samples.linkedlist.questions;
 
 import com.hackergym.samples.linkedlist.model.LinkedListNode;
 
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -10,7 +9,26 @@ import java.util.Set;
  * Created by Fathalian on 6/7/14.
  * HackerGym.com
  */
-public class LoopRemover<T> {
+
+/**
+ * We have a linked list that contains a loop (i.e., Instead of null, the last node points to another node).
+ * Write an algorithm that detects and removes a loop from the linked list.
+ *
+ * For more detailed answer see:
+ * http://hackergym.com/#/problemView/3489afb7-9dad-4310-a907-02a265bea32c?p=11
+ */
+
+public class Problem11<T> {
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public LinkedListNode<T> removeLoopCustom(LinkedListNode<T> head) {
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testRemoveLoopCustom
+        return removeLoopHash(head);
+    }
 
     /**
      * removes any loop that are found in this linked list

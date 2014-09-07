@@ -24,6 +24,9 @@ import java.util.List;
 public class Problem10 {
 
 
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
     public LinkedListNode<Integer> sumCustom(LinkedListNode<Integer> num1,
                                        LinkedListNode<Integer> num2) {
 
@@ -34,6 +37,9 @@ public class Problem10 {
     }
 
 
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
     public LinkedListNode<Integer> subtractCustom(LinkedListNode<Integer> num1,
                                             LinkedListNode<Integer> num2) {
 

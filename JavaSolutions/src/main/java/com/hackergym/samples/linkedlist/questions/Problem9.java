@@ -18,6 +18,9 @@ import com.hackergym.samples.linkedlist.model.LinkedListNode;
 public class Problem9<T> {
 
 
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
     public void straightDeleteCustom(LinkedListNode<T> nodeToDelete) {
 
         //comment out the line below and add your own solution

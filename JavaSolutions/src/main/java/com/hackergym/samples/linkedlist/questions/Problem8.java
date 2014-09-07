@@ -16,6 +16,9 @@ import com.hackergym.samples.linkedlist.model.LinkedListNode;
  */
 public class Problem8<T extends Comparable> {
 
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
     public LinkedListNode<T> mergeCustom(LinkedListNode<T> head1,
                                    LinkedListNode<T> head2) {
 
