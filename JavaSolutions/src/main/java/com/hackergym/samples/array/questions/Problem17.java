@@ -4,7 +4,29 @@ package com.hackergym.samples.array.questions;
  * Created by Fathalian on 8/2/14.
  * HackerGym.com
  */
-public class StringMultiplicator {
+
+/**
+ * You are given two numbers represented by strings.
+ * These numbers are very large so they won’t fit into primitive number data types.
+ * Write an algorithm, which multiplies the two numbers together.
+ * You can imagine that both numbers are positive.
+ * You are also allowed to use dynamic arrays.
+ *
+ * For more detailed solution:
+ * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=17
+ */
+public class Problem17 {
+
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public String multiplyCustom(String a, String b) {
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testMultiplyCustom
+        return multiply(a, b);
+    }
 
     /**
      * This method assumes that all the inputs are well formed numbers

@@ -6,7 +6,27 @@ import com.hackergym.samples.linkedlist.model.Pair;
  * Created by Fathalian on 8/2/14.
  * HackerGym.com
  */
-public class LongestIncreasing {
+
+/**
+ * You have an array of integers.
+ * The longest increasing sub-array is the longest sub-array in the array
+ * in which each element is less than its succeeding element.
+ * Write an algorithm to find the longest continuous increasing sub-array in O(n) time.
+ *
+ * For more detailed solution see:
+ * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=16
+ */
+public class Problem16 {
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public Pair<Integer, Integer> getLongestIncreasingCustom(int[] array) {
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testGetLongestIncreasingCustom
+        return getLongestIncreasingOptimized(array);
+    }
 
     public Pair<Integer, Integer> getLongestIncreasingRollingBest(int[] array) {
 

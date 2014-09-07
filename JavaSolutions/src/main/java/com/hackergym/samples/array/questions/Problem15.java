@@ -4,7 +4,29 @@ package com.hackergym.samples.array.questions;
  * Created by Fathalian on 8/1/14.
  * HackerGym.com
  */
-public class Pivot {
+
+/**
+ * Given an unsorted array of numbers and a pivot point index of x,
+ * rearrange the array in a way that all elements smaller than a[x] come before index x
+ * and all the elements larger than a[x] come after it.
+ * Note that there could be duplicates in the array.
+ * Your algorithm should run in O(1) memory.
+ *
+ * For more detailed solution see:
+ * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=15
+ */
+public class Problem15 {
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public int[] performPivotCustom(int[] array, int pivotIndex) {
+
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testPerformPivotCustom
+        return performPivot(array, pivotIndex);
+    }
 
     public int[] performPivot(int[] array, int pivotIndex) {
 
