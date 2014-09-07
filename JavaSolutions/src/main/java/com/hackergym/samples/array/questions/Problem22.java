@@ -4,7 +4,39 @@ package com.hackergym.samples.array.questions;
  * Created by Fathalian on 8/8/14.
  * HackerGym.com
  */
-public class IntegerConverter {
+
+/**
+ * Write a program that can convert an integer to a string and back.
+ * You may NOT use dynamic array to hold the string.
+ * You may use a helper method to convert a single digit character like ‘9’ to an integer.
+ *
+ * For more detailed solution see:
+ * http://stage.hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=22
+ */
+
+public class Problem22 {
+
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public String toStringCustom(int number) {
+
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testToStringCustom
+        return toString(number);
+    }
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public int fromStringCustom(String number) {
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testFromStringCustom
+        return fromString(number);
+    }
 
     public String toString(int number) {
 
