@@ -5,9 +5,9 @@ import org.junit.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-public class Problem2Test {
+public class Problem10Test {
 
-    private Problem2 duplicateRemover = new Problem2();
+    private Problem10 duplicateRemover = new Problem10();
 
     @Test
     public void testDetectDuplicatesHashNormal() {

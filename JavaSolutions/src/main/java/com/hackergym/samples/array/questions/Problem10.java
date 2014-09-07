@@ -8,14 +8,15 @@ import java.util.*;
  */
 
 /**
- * You have an array that may contain duplicate elements.
- * Given an element, write an algorithm that removes all the occurrences of that element.
+ * Write code to determine whether a string has duplicates.
+ * Your algorithm should run in less than O(n^2).
  *
  * For more detailed answer see:
  *
- * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=2
+ * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=10
  */
-public class Problem2 {
+
+public class Problem10 {
 
     /*============================================
     *                Your Custom Solution
