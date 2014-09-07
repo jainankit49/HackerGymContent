@@ -9,7 +9,26 @@ import java.util.Deque;
  * Created by Fathalian on 6/7/14.
  * HackerGym.com
  */
-public class Interleaving<T> {
+
+/**
+ * Write an algorithm that turns a linked list of the form (i0, i1,…, in) into (i0, in, i1, in-1, …).
+ * For example: (1,2,3,4,5) into (1,5,2,4,3).
+ *
+ * For more detailed answer see:
+ * http://hackergym.com/#/problemView/3489afb7-9dad-4310-a907-02a265bea32c?p=13
+ */
+
+public class Problem13<T> {
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public LinkedListNode<T> interleaveCustom(LinkedListNode<T> head) {
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testInterleaveCustom
+        return interleaveStack(head);
+    }
 
     public LinkedListNode<T> interleaveStack(LinkedListNode<T> head) {
 

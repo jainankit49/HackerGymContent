@@ -11,9 +11,9 @@ import java.util.function.Function;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
-public class InterleavingTest {
+public class Problem13Test {
 
-    Interleaving<String> solver = new Interleaving<>();
+    Problem13<String> solver = new Problem13<>();
 
     @Test
     public void testInterleaveStackEvent() throws Exception {
