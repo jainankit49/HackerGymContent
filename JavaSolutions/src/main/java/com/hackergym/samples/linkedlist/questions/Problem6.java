@@ -9,7 +9,28 @@ import java.util.Map;
  * Created by Fathalian on 6/9/14.
  * HackerGym.com
  */
-public class ListCopy<T> {
+public class Problem6<T> {
+
+    /**
+     * Imagine a linked list in which each node has two pointers.
+     * One pointer points to the next node, and the other points to any other node or null (let’s call this a sibling pointer).
+     * Implement an algorithm to copy this list.
+     * <p/>
+     * For detailed answer see:
+     * http://hackergym.com/#/problemView/3489afb7-9dad-4310-a907-02a265bea32c?p=6
+     */
+
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public SiblingListNode<T> copyCustom(SiblingListNode<T> head) {
+
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testCopyCustom
+        return copyWithHash(head);
+    }
 
     /**
      * Copies the list pointed to by head and returns the copy.
