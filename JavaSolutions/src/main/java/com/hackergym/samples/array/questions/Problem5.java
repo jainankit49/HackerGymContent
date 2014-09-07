@@ -6,15 +6,33 @@ import com.hackergym.samples.model.Element;
  * Created by Fathalian on 7/29/14.
  * HackerGym.com
  */
-public class DynamicArray {
 
+/**
+ *Imagine that you can only create arrays of fixed size.
+ *Implement a Dynamic Array data structure that gives its user the perception
+ *that it has a flexible size.
+ *
+ * For more detailed answer see:
+ * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=5
+ */
+
+public class Problem5 {
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    /**
+     * To add your custom solution, replace the code in all the public methods
+     * with your own code.
+     */
+    
     private static final int INIT_SIZE = 4;
     private Element[] array;
     private int expansionPoint = INIT_SIZE  - 1;
     private int shrinkagePoint = INIT_SIZE / 2 - 1;
     private int lastIndex = -1;
 
-    public DynamicArray() {
+    public Problem5() {
         //we setup the array with initial size
         //if this was a real world code we would have probably set it
         //to a much large value

@@ -20,6 +20,9 @@ import java.util.Map;
 
 public class Problem4 {
 
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
     public boolean areAnagramsCustom(String a, String b) {
         //comment out the line below and add your own solution
         //unit tests will be run automatically against your solution

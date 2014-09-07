@@ -7,13 +7,13 @@ import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-public class DynamicArrayTest {
+public class Problem5Test {
 
     @Test
     public void testInsertNormal() {
 
         //Arrange
-        DynamicArray array = new DynamicArray();
+        Problem5 array = new Problem5();
 
         //Act
         for (int i = 0; i <= 3; i++) {
@@ -30,7 +30,7 @@ public class DynamicArrayTest {
     @Test
     public void testInsertWithExpansion() {
         //Arrange
-        DynamicArray array = new DynamicArray();
+        Problem5 array = new Problem5();
 
         //Act
         for (int i = 0; i <= 23; i++) {
@@ -48,7 +48,7 @@ public class DynamicArrayTest {
     @Test(expected = IllegalArgumentException.class)
     public void testInsertNull() {
 
-        DynamicArray array = new DynamicArray();
+        Problem5 array = new Problem5();
         array.insert(null);
     }
 
@@ -56,7 +56,7 @@ public class DynamicArrayTest {
     public void testDeleteNormal() {
 
         //Arrange
-        DynamicArray array = new DynamicArray();
+        Problem5 array = new Problem5();
 
         int actualLength = 24;
         for (int i = 0; i < actualLength; i++) {
@@ -80,7 +80,7 @@ public class DynamicArrayTest {
     public void testDeleteWithShrinkage() {
 
         //Arrange
-        DynamicArray array = new DynamicArray();
+        Problem5 array = new Problem5();
 
         int actualLength = 24;
         for (int i = 0; i < actualLength; i++) {
@@ -101,7 +101,7 @@ public class DynamicArrayTest {
     @Test(expected = IndexOutOfBoundsException.class)
     public void testDeleteInvalidIndex() {
         //Arrange
-        DynamicArray array = new DynamicArray();
+        Problem5 array = new Problem5();
         array.delete(100);
     }
 
@@ -109,7 +109,7 @@ public class DynamicArrayTest {
     public void testInsertAndDeleteTogether() {
 
         //Arrange
-        DynamicArray array = new DynamicArray();
+        Problem5 array = new Problem5();
         int actualLength = 15;
         for (int i = 0; i < actualLength; i++) {
             array.insert(new Element(String.valueOf(i)));
