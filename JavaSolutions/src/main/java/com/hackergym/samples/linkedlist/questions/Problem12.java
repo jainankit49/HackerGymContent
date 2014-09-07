@@ -9,7 +9,27 @@ import java.util.Deque;
  * Created by Fathalian on 6/7/14.
  * HackerGym.com
  */
-public class Palindrome {
+
+/**
+ * Write an algorithm to detect if a linked list of unknown size is palindrome.
+ *
+ * For more detailed answer see:
+ * http://hackergym.com/#/problemView/3489afb7-9dad-4310-a907-02a265bea32c?p=12
+ */
+
+public class Problem12 {
+
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public boolean isPalindromeCustom(LinkedListNode<String> head) {
+
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testIsPalindromeCustom
+        return isPalindromeReverse(head);
+    }
 
     public boolean isPalindromeReverse(LinkedListNode<String> head) {
 

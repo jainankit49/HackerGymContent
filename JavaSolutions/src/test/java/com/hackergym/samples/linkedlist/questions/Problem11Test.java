@@ -99,7 +99,7 @@ public class Problem11Test {
         LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(size);
         testLoop(solver::removeLoopCustom, head, size);
     }
-   
+
     private void testLoop(Function<LinkedListNode<String>, LinkedListNode<String>> function,
                           LinkedListNode<String> head,
                           int expectedSize) {

@@ -7,9 +7,9 @@ import org.junit.Test;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
-public class PalindromeTest {
+public class Problem12Test {
 
-    private Palindrome solver = new Palindrome();
+    private Problem12 solver = new Problem12();
 
     @Test
     public void testIsPalindromeReverseEven() throws Exception {
@@ -141,6 +141,52 @@ public class PalindromeTest {
         String str = "a";
         LinkedListNode<String> head = LinkedListFactory.generateLinkedListFromString(str);
         boolean isPalindrome = solver.isPalindromeStack(head);
+
+        assertThat(isPalindrome, is(true));
+    }
+
+    @Test
+    public void testIsPalindromeCustomEven() throws Exception {
+        String str = "abba";
+        LinkedListNode<String> head = LinkedListFactory.generateLinkedListFromString(str);
+        boolean isPalindrome = solver.isPalindromeCustom(head);
+
+        assertThat(isPalindrome, is(true));
+    }
+
+    @Test
+    public void testIsPalindromeCustomEvenNegative() throws Exception {
+        String str = "abca";
+        LinkedListNode<String> head = LinkedListFactory.generateLinkedListFromString(str);
+        boolean isPalindrome = solver.isPalindromeCustom(head);
+
+        assertThat(isPalindrome, is(false));
+    }
+
+    @Test
+    public void testIsPalindromeCustomOdd() throws Exception {
+        String str = "abcba";
+        LinkedListNode<String> head = LinkedListFactory.generateLinkedListFromString(str);
+        boolean isPalindrome = solver.isPalindromeCustom(head);
+
+        assertThat(isPalindrome, is(true));
+    }
+
+    @Test
+    public void testIsPalindromeCustomOddNegative() throws Exception {
+
+        String str = "abcbc";
+        LinkedListNode<String> head = LinkedListFactory.generateLinkedListFromString(str);
+        boolean isPalindrome = solver.isPalindromeCustom(head);
+
+        assertThat(isPalindrome, is(false));
+    }
+
+    @Test
+    public void testIsPalindromeCustomSingleElement() throws Exception {
+        String str = "a";
+        LinkedListNode<String> head = LinkedListFactory.generateLinkedListFromString(str);
+        boolean isPalindrome = solver.isPalindromeCustom(head);
 
         assertThat(isPalindrome, is(true));
     }
