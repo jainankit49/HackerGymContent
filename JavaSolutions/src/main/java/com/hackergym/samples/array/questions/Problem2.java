@@ -6,7 +6,37 @@ import java.util.*;
  * Created by Fathalian on 7/29/14.
  * HackerGym.com
  */
-public class Duplicates {
+
+/**
+ * You have an array that may contain duplicate elements.
+ * Given an element, write an algorithm that removes all the occurrences of that element.
+ *
+ * For more detailed answer see:
+ *
+ * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=2
+ */
+public class Problem2 {
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public boolean detectDuplicatesCustom(String s) {
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testDetectDuplicatesCustom
+        return detectDuplicatesHash(s);
+    }
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public String removeDuplicatesCustom(String s) {
+
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testRemoveDuplicatesCustom
+        return removeDuplicatesGrouping(s);
+    }
 
     public boolean detectDuplicatesHash(String s) {
 

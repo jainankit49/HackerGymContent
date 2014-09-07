@@ -14,7 +14,7 @@ import java.util.Set;
  * aa – bb – bbb- abbba- aabbbaa
  *
  * For more detailed answer see:
- * http://stage.hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=1
+ * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=1
  */
 
 public class Problem1 {

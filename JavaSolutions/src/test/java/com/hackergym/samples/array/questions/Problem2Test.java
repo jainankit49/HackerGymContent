@@ -5,9 +5,10 @@ import org.junit.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-public class DuplicatesTest {
+public class Problem2Test {
 
-    private Duplicates duplicateRemover = new Duplicates();
+    private Problem2 duplicateRemover = new Problem2();
+
     @Test
     public void testDetectDuplicatesHashNormal() {
 
@@ -41,6 +42,22 @@ public class DuplicatesTest {
     }
 
     @Test
+    public void testDetectDuplicatesCustomNormal() {
+
+        assertThat(duplicateRemover.detectDuplicatesCustom("HACCERGYMM"), is(true));
+    }
+
+    @Test
+    public void testDetectDuplicatesCustomEmptyString() {
+        assertThat(duplicateRemover.detectDuplicatesCustom(""), is(false));
+    }
+
+    @Test
+    public void testDetectDuplicatesCustomNoDuplicates() {
+        assertThat(duplicateRemover.detectDuplicatesCustom("HackerGym"), is(false));
+    }
+    @Test
+
     public void testRemoveDuplicates() {
         assertThat(duplicateRemover.removeDuplicates("HACCKERRGYMM"), is("HACKERGYM"));
     }
@@ -53,6 +70,36 @@ public class DuplicatesTest {
     @Test
     public void testRemoveDuplicatesAllDuplicates() {
         assertThat(duplicateRemover.removeDuplicates("hhhhhhhhh"), is("h"));
+    }
+
+    @Test
+    public void testRemoveDuplicatesCustom() {
+        assertThat(duplicateRemover.removeDuplicatesCustom("HACCKERRGYMM"), is("HACKERGYM"));
+    }
+
+    @Test
+    public void testRemoveDuplicatesNoDuplicatesCustom() {
+        assertThat(duplicateRemover.removeDuplicatesCustom("HACKERGYM"), is("HACKERGYM"));
+    }
+
+    @Test
+    public void testRemoveDuplicatesAllDuplicatesCustom() {
+        assertThat(duplicateRemover.removeDuplicatesCustom("hhhhhhhhh"), is("h"));
+    }
+
+    @Test
+    public void testRemoveDuplicatesAllDuplicatesCustomAtEnd() {
+        assertThat(duplicateRemover.removeDuplicatesCustom("1234567hh"), is("1234567h"));
+    }
+
+    @Test
+    public void testRemoveDuplicatesAllDuplicatesCustomAtBeginning() {
+        assertThat(duplicateRemover.removeDuplicatesCustom("aa1234567"), is("a1234567"));
+    }
+
+    @Test
+    public void testRemoveDuplicatesAllDuplicatesCustomSingle() {
+        assertThat(duplicateRemover.removeDuplicatesCustom("1234hh567"), is("1234h567"));
     }
 
     @Test
