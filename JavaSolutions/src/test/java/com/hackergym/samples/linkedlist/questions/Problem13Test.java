@@ -52,6 +52,24 @@ public class Problem13Test {
         performTestInterLeaving(solver::interleaveReverse, size);
     }
 
+    @Test
+    public void testInterleaveCustomEvent() throws Exception {
+
+        int size = 10;
+        performTestInterLeaving(solver::interleaveCustom, size);
+    }
+
+    @Test
+    public void testInterleaveCustomOdd() throws Exception {
+        int size = 9;
+        performTestInterLeaving(solver::interleaveCustom, size);
+    }
+
+    @Test
+    public void testInterleaveCustomSingleElement() throws Exception {
+        int size = 1;
+        performTestInterLeaving(solver::interleaveCustom, size);
+    }
 
     private void performTestInterLeaving(Function<LinkedListNode<String>, LinkedListNode<String>> func, int size) {
 
