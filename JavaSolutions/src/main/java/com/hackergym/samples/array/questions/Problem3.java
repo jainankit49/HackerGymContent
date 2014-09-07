@@ -6,7 +6,27 @@ import com.hackergym.samples.model.Element;
  * Created by Fathalian on 7/29/14.
  * HackerGym.com
  */
-public class CircularShift {
+
+/**
+ *A circular right shift of an array is a shift of elements forward in which the items that overflow from the end
+ * are added to the beginning of the array.
+ * For instance, applying a circular shift of 3 to array [1,2,3,4,5,6] gives you [4,5,6,1,2,3].
+ * Write the algorithm to perform a circular shift on arrays of a given size.
+ *
+ * For more detailed answer see:
+ * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=3
+ */
+public class Problem3 {
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public Element[] shiftCustom(Element[] array, int shiftCount) {
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testShiftCustom
+        return shiftWithExtraMemory(array, shiftCount);
+    }
 
     public Element[] shiftWithExtraMemory(Element[] array, int shiftCount) {
 
