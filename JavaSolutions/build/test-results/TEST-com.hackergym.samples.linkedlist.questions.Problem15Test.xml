@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hackergym.samples.linkedlist.questions.Problem15Test" tests="12" skipped="0" failures="0" errors="0" timestamp="2014-09-07T19:40:14" hostname="Alis-MacBook-Pro.local" time="0.003">
+  <properties/>
+  <testcase name="testDetectIntersectionWithHashDifferentSizes" classname="com.hackergym.samples.linkedlist.questions.Problem15Test" time="0.001"/>
+  <testcase name="testDetectIntersectionWithPointerIntersectAtBeginning" classname="com.hackergym.samples.linkedlist.questions.Problem15Test" time="0.0"/>
+  <testcase name="testDetectIntersectionWithPointersEqualSize" classname="com.hackergym.samples.linkedlist.questions.Problem15Test" time="0.0"/>
+  <testcase name="testDetectIntersectionWithPointersNotIntersecting" classname="com.hackergym.samples.linkedlist.questions.Problem15Test" time="0.0"/>
+  <testcase name="testDetectIntersectionCustomDifferentSizes" classname="com.hackergym.samples.linkedlist.questions.Problem15Test" time="0.0"/>
+  <testcase name="testDetectIntersectionCustomNotIntersecting" classname="com.hackergym.samples.linkedlist.questions.Problem15Test" time="0.0"/>
+  <testcase name="testDetectIntersectionWithPointersDifferentSizes" classname="com.hackergym.samples.linkedlist.questions.Problem15Test" time="0.0"/>
+  <testcase name="testDetectIntersectionCustomIntersectAtBeginning" classname="com.hackergym.samples.linkedlist.questions.Problem15Test" time="0.001"/>
+  <testcase name="testDetectIntersectionWithHashNotIntersecting" classname="com.hackergym.samples.linkedlist.questions.Problem15Test" time="0.0"/>
+  <testcase name="testDetectIntersectionWithHashIntersectAtBeginning" classname="com.hackergym.samples.linkedlist.questions.Problem15Test" time="0.0"/>
+  <testcase name="testDetectIntersectionWithHashEqualSize" classname="com.hackergym.samples.linkedlist.questions.Problem15Test" time="0.0"/>
+  <testcase name="testDetectIntersectionCustomEqualSize" classname="com.hackergym.samples.linkedlist.questions.Problem15Test" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

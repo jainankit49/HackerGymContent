@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hackergym.samples.array.questions.Problem2Test" tests="24" skipped="0" failures="0" errors="0" timestamp="2014-09-07T19:40:14" hostname="Alis-MacBook-Pro.local" time="0.005">
+  <properties/>
+  <testcase name="testRemoveDuplicatesAllDuplicatesCustom" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.0"/>
+  <testcase name="testDetectDuplicatesCustomNormal" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.0"/>
+  <testcase name="testDetectDuplicatesHashNormal" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.001"/>
+  <testcase name="testDetectDuplicatesCustomNoDuplicates" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.0"/>
+  <testcase name="testRemoveDuplicates" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.001"/>
+  <testcase name="testDetectDuplicatesHashEmptyString" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.0"/>
+  <testcase name="testDetectDuplicatesCustomEmptyString" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.0"/>
+  <testcase name="testRemoveDuplicatesNoDuplicatesCustom" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.0"/>
+  <testcase name="testRemoveDuplicatesAllDuplicatesGroupingSingle" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.0"/>
+  <testcase name="testDetectDuplicatesSortNoDuplicates" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.001"/>
+  <testcase name="testRemoveDuplicatesNoDuplicatesGrouping" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.0"/>
+  <testcase name="testDetectDuplicatesHashNoDuplicates" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.0"/>
+  <testcase name="testRemoveDuplicatesAllDuplicatesGroupingAtBeginning" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.0"/>
+  <testcase name="testRemoveDuplicatesAllDuplicatesGrouping" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.0"/>
+  <testcase name="testRemoveDuplicatesGrouping" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.0"/>
+  <testcase name="testRemoveDuplicatesNoDuplicates" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.0"/>
+  <testcase name="testRemoveDuplicatesAllDuplicatesCustomAtBeginning" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.0"/>
+  <testcase name="testRemoveDuplicatesCustom" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.0"/>
+  <testcase name="testDetectDuplicatesSortNormal" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.0"/>
+  <testcase name="testRemoveDuplicatesAllDuplicatesCustomAtEnd" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.0"/>
+  <testcase name="testRemoveDuplicatesAllDuplicatesGroupingAtEnd" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.0"/>
+  <testcase name="testDetectDuplicatesSortEmptyString" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.0"/>
+  <testcase name="testRemoveDuplicatesAllDuplicatesCustomSingle" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.0"/>
+  <testcase name="testRemoveDuplicatesAllDuplicates" classname="com.hackergym.samples.array.questions.Problem2Test" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

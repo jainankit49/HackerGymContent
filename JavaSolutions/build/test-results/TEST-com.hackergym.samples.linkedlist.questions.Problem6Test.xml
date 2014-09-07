@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hackergym.samples.linkedlist.questions.Problem6Test" tests="6" skipped="0" failures="0" errors="0" timestamp="2014-09-07T19:40:14" hostname="Alis-MacBook-Pro.local" time="0.005">
+  <properties/>
+  <testcase name="testCopyCustom" classname="com.hackergym.samples.linkedlist.questions.Problem6Test" time="0.004"/>
+  <testcase name="testCopyWithHash" classname="com.hackergym.samples.linkedlist.questions.Problem6Test" time="0.0"/>
+  <testcase name="testCopyCustomSingleNode" classname="com.hackergym.samples.linkedlist.questions.Problem6Test" time="0.0"/>
+  <testcase name="testCopyWithHashSingleNode" classname="com.hackergym.samples.linkedlist.questions.Problem6Test" time="0.0"/>
+  <testcase name="testCopyWithPointers" classname="com.hackergym.samples.linkedlist.questions.Problem6Test" time="0.001"/>
+  <testcase name="testCopyWithPointersSingleList" classname="com.hackergym.samples.linkedlist.questions.Problem6Test" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

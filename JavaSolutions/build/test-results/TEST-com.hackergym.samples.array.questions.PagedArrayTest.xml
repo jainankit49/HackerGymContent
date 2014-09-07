@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.hackergym.samples.array.questions.PagedArrayTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2014-09-06T17:07:34" hostname="Alis-MacBook-Pro.local" time="0.011">
+<testsuite name="com.hackergym.samples.array.questions.PagedArrayTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2014-09-07T19:40:14" hostname="Alis-MacBook-Pro.local" time="0.037">
   <properties/>
   <testcase name="testInsertElementNullElement" classname="com.hackergym.samples.array.questions.PagedArrayTest" time="0.0"/>
   <testcase name="testInsertIndexOutOfBound" classname="com.hackergym.samples.array.questions.PagedArrayTest" time="0.0"/>
-  <testcase name="testInsertElementAtNewPageWhilePrevPagesAreEmprty" classname="com.hackergym.samples.array.questions.PagedArrayTest" time="0.001"/>
+  <testcase name="testInsertElementAtNewPageWhilePrevPagesAreEmprty" classname="com.hackergym.samples.array.questions.PagedArrayTest" time="0.0"/>
   <testcase name="testInsertElementLastPageFull" classname="com.hackergym.samples.array.questions.PagedArrayTest" time="0.0"/>
-  <testcase name="testDeleteElementLastPageEmpty" classname="com.hackergym.samples.array.questions.PagedArrayTest" time="0.008"/>
+  <testcase name="testDeleteElementLastPageEmpty" classname="com.hackergym.samples.array.questions.PagedArrayTest" time="0.035"/>
   <testcase name="testCreatePagedArrayZeroSize" classname="com.hackergym.samples.array.questions.PagedArrayTest" time="0.0"/>
   <testcase name="testInsertElementNormal" classname="com.hackergym.samples.array.questions.PagedArrayTest" time="0.0"/>
   <testcase name="testDeleteElementNormal" classname="com.hackergym.samples.array.questions.PagedArrayTest" time="0.0"/>
-  <testcase name="testDeleteElementNonExisting" classname="com.hackergym.samples.array.questions.PagedArrayTest" time="0.001"/>
+  <testcase name="testDeleteElementNonExisting" classname="com.hackergym.samples.array.questions.PagedArrayTest" time="0.0"/>
   <testcase name="testInsertElementToLastPage" classname="com.hackergym.samples.array.questions.PagedArrayTest" time="0.0"/>
   <testcase name="testInsertAsLastElement" classname="com.hackergym.samples.array.questions.PagedArrayTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

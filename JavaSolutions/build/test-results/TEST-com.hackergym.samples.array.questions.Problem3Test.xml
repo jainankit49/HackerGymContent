@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hackergym.samples.array.questions.Problem3Test" tests="9" skipped="0" failures="0" errors="0" timestamp="2014-09-07T19:40:14" hostname="Alis-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="testShiftCustomZeroShift" classname="com.hackergym.samples.array.questions.Problem3Test" time="0.0"/>
+  <testcase name="testShiftCustom" classname="com.hackergym.samples.array.questions.Problem3Test" time="0.0"/>
+  <testcase name="testShiftWithExtraMemoryBigShift" classname="com.hackergym.samples.array.questions.Problem3Test" time="0.0"/>
+  <testcase name="testShiftCustomMemoryBigShift" classname="com.hackergym.samples.array.questions.Problem3Test" time="0.0"/>
+  <testcase name="testShiftWithRotateZeroShift" classname="com.hackergym.samples.array.questions.Problem3Test" time="0.0"/>
+  <testcase name="testShiftWithExtraMemory" classname="com.hackergym.samples.array.questions.Problem3Test" time="0.0"/>
+  <testcase name="testShiftWithRotateBigShift" classname="com.hackergym.samples.array.questions.Problem3Test" time="0.0"/>
+  <testcase name="testShiftWithRotate" classname="com.hackergym.samples.array.questions.Problem3Test" time="0.0"/>
+  <testcase name="testShiftWithExtraMemoryZeroShift" classname="com.hackergym.samples.array.questions.Problem3Test" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

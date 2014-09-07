@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hackergym.samples.linkedlist.questions.Problem8Test" tests="8" skipped="0" failures="0" errors="0" timestamp="2014-09-07T19:40:14" hostname="Alis-MacBook-Pro.local" time="0.002">
+  <properties/>
+  <testcase name="testMergeSameSize" classname="com.hackergym.samples.linkedlist.questions.Problem8Test" time="0.001"/>
+  <testcase name="testMergeOneEmpty" classname="com.hackergym.samples.linkedlist.questions.Problem8Test" time="0.0"/>
+  <testcase name="testMergeBothEmpty" classname="com.hackergym.samples.linkedlist.questions.Problem8Test" time="0.0"/>
+  <testcase name="testMergeTwoDifferentSizes" classname="com.hackergym.samples.linkedlist.questions.Problem8Test" time="0.0"/>
+  <testcase name="testMergeCustomTwoDifferentSizes" classname="com.hackergym.samples.linkedlist.questions.Problem8Test" time="0.001"/>
+  <testcase name="testMergeCustomBothEmpty" classname="com.hackergym.samples.linkedlist.questions.Problem8Test" time="0.0"/>
+  <testcase name="testMergeCustomSameSize" classname="com.hackergym.samples.linkedlist.questions.Problem8Test" time="0.0"/>
+  <testcase name="testMergeCustomOneEmpty" classname="com.hackergym.samples.linkedlist.questions.Problem8Test" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

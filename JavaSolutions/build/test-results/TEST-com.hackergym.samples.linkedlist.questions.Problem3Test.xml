@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hackergym.samples.linkedlist.questions.Problem3Test" tests="9" skipped="0" failures="0" errors="0" timestamp="2014-09-07T19:40:14" hostname="Alis-MacBook-Pro.local" time="0.0">
+  <properties/>
+  <testcase name="testFindMiddlePointersOddElements" classname="com.hackergym.samples.linkedlist.questions.Problem3Test" time="0.0"/>
+  <testcase name="testFindMiddleIterativeEven" classname="com.hackergym.samples.linkedlist.questions.Problem3Test" time="0.0"/>
+  <testcase name="testFindMiddleIterativeOdd" classname="com.hackergym.samples.linkedlist.questions.Problem3Test" time="0.0"/>
+  <testcase name="testFindMiddlePointersSingleElement" classname="com.hackergym.samples.linkedlist.questions.Problem3Test" time="0.0"/>
+  <testcase name="testFindMiddleCustomSingleElement" classname="com.hackergym.samples.linkedlist.questions.Problem3Test" time="0.0"/>
+  <testcase name="testFindMiddlePointersEvenElements" classname="com.hackergym.samples.linkedlist.questions.Problem3Test" time="0.0"/>
+  <testcase name="testMiddleCustomOdd" classname="com.hackergym.samples.linkedlist.questions.Problem3Test" time="0.0"/>
+  <testcase name="testMiddleCustomEven" classname="com.hackergym.samples.linkedlist.questions.Problem3Test" time="0.0"/>
+  <testcase name="testFindMiddleIterativeSingleElement" classname="com.hackergym.samples.linkedlist.questions.Problem3Test" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

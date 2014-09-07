@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.hackergym.samples.array.questions.DeleterTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2014-09-06T17:07:33" hostname="Alis-MacBook-Pro.local" time="0.003">
+<testsuite name="com.hackergym.samples.array.questions.DeleterTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2014-09-07T19:40:13" hostname="Alis-MacBook-Pro.local" time="0.006">
   <properties/>
-  <testcase name="testDeleteWithoutMemory" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
+  <testcase name="testDeleteWithoutMemory" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.003"/>
   <testcase name="testDeleteWithoutMemoryMultipleAtTheEnd" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
-  <testcase name="testDeleteWithoutMemoryMultipleAtTheBeginning" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.001"/>
+  <testcase name="testDeleteWithoutMemoryMultipleAtTheBeginning" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
   <testcase name="testDeleteWithMemoryMultipleAtTheEnd" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
   <testcase name="testDeleteWithoutMemoryNoElement" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
   <testcase name="testDeleteWithMemoryMultipleAtTheBeginning" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
   <testcase name="testDeleteWithMemoryMultipleBackToBack" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
   <testcase name="testDeleteWithMemory" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
-  <testcase name="testDeleteWithoutMemoryAllElements" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.001"/>
+  <testcase name="testDeleteWithoutMemoryAllElements" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
   <testcase name="testDeleteWithMemoryMultipleNoElement" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
   <testcase name="testDeleteWithoutMemoryMultipleBackToBack" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
   <testcase name="testDeleteWithoutMemorySingleInTheMiddle" classname="com.hackergym.samples.array.questions.DeleterTest" time="0.0"/>
