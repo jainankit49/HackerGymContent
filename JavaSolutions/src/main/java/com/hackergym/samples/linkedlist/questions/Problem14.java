@@ -10,14 +10,36 @@ import java.util.LinkedList;
  * Created by Fathalian on 6/9/14.
  * HackerGym.com
  */
-public class OddSeparator<T> {
+
+/**
+ * Given a linked list, divide it into two other linked lists,
+ * one of which contains the odd indexed elements and the other contains the even indexed elements.
+ *
+ * For more detailed answer see:
+ * http://hackergym.com/#/problemView/3489afb7-9dad-4310-a907-02a265bea32c?p=14
+ */
+
+public class Problem14<T> {
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public Pair<LinkedListNode<T>,
+            LinkedListNode<T>> separateOddsCustom(LinkedListNode<T> head) {
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testSeparateOddsCustom
+        return separateOddsQueue(head);
+    }
 
     /**
      * separates Nodes at even index from nodes at odd index in a linkedList pointed to by head
      *
      * @return a pair containing (EvenNodes, OddNodes) in which even nodes are nodes at the even
      * indexes and OddNodes are nodes at odd indexes
+     *
      */
+
     public Pair<LinkedListNode<T>,
             LinkedListNode<T>> separateOddsQueue(LinkedListNode<T> head) {
 

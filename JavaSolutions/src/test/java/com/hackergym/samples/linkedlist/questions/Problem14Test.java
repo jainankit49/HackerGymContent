@@ -12,9 +12,9 @@ import java.util.function.Function;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
-public class OddSeparatorTest {
+public class Problem14Test {
 
-    private OddSeparator<String> solver = new OddSeparator<>();
+    private Problem14<String> solver = new Problem14<>();
 
     @Test
     public void testSeparateOddsQueueEvenSize() throws Exception {
@@ -56,6 +56,25 @@ public class OddSeparatorTest {
         performTestSeparation(solver::separateOddsPointers, head);
     }
 
+    @Test
+    public void testSeparateOddsCustomEvenSize() throws Exception {
+        LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(8);
+        performTestSeparation(solver::separateOddsCustom, head);
+    }
+
+
+    @Test
+    public void testSeparateOddsCustomOddSize() throws Exception {
+        LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(7);
+        performTestSeparation(solver::separateOddsCustom, head);
+    }
+
+    @Test
+    public void testSeparateOddsCustomSingleSize() throws Exception {
+        LinkedListNode<String> head = LinkedListFactory.generateStringLinkedList(1);
+        performTestSeparation(solver::separateOddsCustom, head);
+
+    }
     private void performTestSeparation(Function<LinkedListNode<String>, Pair<LinkedListNode<String>, LinkedListNode<String>>> func,
                                        LinkedListNode<String> head) {
 
