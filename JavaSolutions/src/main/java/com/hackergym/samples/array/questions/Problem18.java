@@ -7,7 +7,35 @@ import java.util.Set;
  * Created by Fathalian on 8/6/14.
  * HackerGym.com
  */
-public class Permutator {
+
+/**
+ * You have two arrays, A and P of size n.
+ * Array A, contains arbitrary elements and P has all the indexes of A, arranged in an arbitrary order:
+ * A = { a, b, c, d, e, f }
+ * P = { 3, 0, 1, 2, 5, 4 }
+ * We call P a permutation array for A.
+ * Applying P to A causes each element of A to be mapped to a new position indicated
+ * by the value of the corresponding P index.
+ * In the example above, ‘a’ will be mapped to position 3 and ‘b’ to position 0:
+ * P(A) = { b, c, d, a, f, e }
+ * Write an algorithm that can apply a permutation to an array.
+ * You cannot use additional memory to copy elements of the array but you may use
+ * additional memory for book keeping purposes.
+ *
+ * For more detailed solution see:
+ * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=18
+ */
+public class Problem18 {
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public char[] permutateCustom(char[] input, int[] perm) {
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testPermutateCustom
+        return permutate(input, perm);
+    }
 
     public char[] permutate(char[] input, int[] perm) {
 
