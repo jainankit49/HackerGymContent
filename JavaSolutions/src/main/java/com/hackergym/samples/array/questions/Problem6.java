@@ -6,7 +6,26 @@ import com.hackergym.samples.model.Element;
  * Created by Fathalian on 7/29/14.
  * HackerGym.com
  */
-public class Reverse {
+
+/**
+ * Write code to reverse an array.
+ *
+ * For more detailed solution see:
+ * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=6
+ */
+
+public class Problem6 {
+
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public Element[] reverseCustom(Element[] array) {
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testReverseCustom
+        return reverseWithMemory(array);
+    }
 
     public Element[] reverseWithMemory(Element[] array) {
 

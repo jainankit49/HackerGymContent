@@ -4,7 +4,40 @@ package com.hackergym.samples.array.questions;
  * Created by Fathalian on 7/30/14.
  * HackerGym.com
  */
-public class LRE {
+
+/**
+ * Run Length Encoding (RLE) is an algorithm for compressing strings,
+ *which is specifically useful in compressing binary values.
+ * aabccaabaad <--> 2a1b2c2a1b2a1d
+ * Implement RLE algorithm for compression and decompression of strings.
+ *
+ * For more detailed solution see:
+ * http://stage.hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=7
+ */
+
+public class Problem7 {
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public String compressCustom(String s) {
+
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testCompressCustom
+        return compress(s);
+    }
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public String decompressCustom(String s) {
+
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testDecompressCustom
+        return decompress(s);
+    }
 
     public String compress(String s) {
 

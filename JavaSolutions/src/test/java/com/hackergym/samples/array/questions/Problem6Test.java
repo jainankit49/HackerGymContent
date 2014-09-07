@@ -6,7 +6,7 @@ import org.junit.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-public class ReverseTest {
+public class Problem6Test {
 
     @Test
     public void reverseWithMemoryNormal() {
@@ -15,7 +15,7 @@ public class ReverseTest {
         Element[] actualArray = createArray(10);
 
         //Act
-        Reverse reverser = new Reverse();
+        Problem6 reverser = new Problem6();
         subjectArray = reverser.reverseWithMemory(subjectArray);
 
         //Assert
@@ -30,7 +30,7 @@ public class ReverseTest {
         Element[] subjectArray = createArray(1);
         Element[] actualArray = createArray(1);
 
-        Reverse reverse = new Reverse();
+        Problem6 reverse = new Problem6();
         subjectArray = reverse.reverseWithMemory(subjectArray);
 
         assertThat(subjectArray.length, is(actualArray.length));
@@ -44,7 +44,7 @@ public class ReverseTest {
         Element[] actualArray = createArray(10);
 
         //Act
-        Reverse reverser = new Reverse();
+        Problem6 reverser = new Problem6();
         subjectArray = reverser.reverseWithoutMemory(subjectArray);
 
         //Assert
@@ -60,12 +60,41 @@ public class ReverseTest {
         Element[] subjectArray = createArray(1);
         Element[] actualArray = createArray(1);
 
-        Reverse reverse = new Reverse();
+        Problem6 reverse = new Problem6();
         subjectArray = reverse.reverseWithoutMemory(subjectArray);
 
         assertThat(subjectArray.length, is(actualArray.length));
         assertThat(subjectArray[0].getValue(), is(actualArray[0].getValue()));
 
+    }
+
+    @Test
+    public void reverseCustomNormal() {
+        //Arrange
+        Element[] subjectArray = createArray(10);
+        Element[] actualArray = createArray(10);
+
+        //Act
+        Problem6 reverser = new Problem6();
+        subjectArray = reverser.reverseCustom(subjectArray);
+
+        //Assert
+        for (int i = 0; i < subjectArray.length; i++) {
+            assertThat(subjectArray[i].getValue(), is(actualArray[actualArray.length - i -1].getValue()));
+        }
+    }
+
+    @Test
+    public void reverseCustomOneElement() {
+        //Arrange
+        Element[] subjectArray = createArray(1);
+        Element[] actualArray = createArray(1);
+
+        Problem6 reverse = new Problem6();
+        subjectArray = reverse.reverseCustom(subjectArray);
+
+        assertThat(subjectArray.length, is(actualArray.length));
+        assertThat(subjectArray[0].getValue(), is(actualArray[0].getValue()));
     }
 
     private Element[] createArray(int size) {

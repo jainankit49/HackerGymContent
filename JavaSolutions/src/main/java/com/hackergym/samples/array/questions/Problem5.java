@@ -25,7 +25,7 @@ public class Problem5 {
      * To add your custom solution, replace the code in all the public methods
      * with your own code.
      */
-    
+
     private static final int INIT_SIZE = 4;
     private Element[] array;
     private int expansionPoint = INIT_SIZE  - 1;
