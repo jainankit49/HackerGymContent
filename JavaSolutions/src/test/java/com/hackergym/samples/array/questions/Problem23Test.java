@@ -7,9 +7,10 @@ import java.util.List;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-public class MnemonicTest {
+public class Problem23Test {
 
-    private Mnemonic mnemonic = new Mnemonic();
+    private Problem23 mnemonic = new Problem23();
+
     @Test
     public void testFindMnemonics() throws Exception {
         int[] digits = {2, 0, 6};
@@ -42,6 +43,18 @@ public class MnemonicTest {
         assertThat(result2.size(), is(expectedResult2.length));
         for(int i = 0 ; i < expectedResult2.length ; i++) {
             assertThat(result2.contains(expectedResult2[i]), is(true));
+        }
+    }
+
+    @Test
+    public void testFindMnemonicsCustom() throws Exception {
+        int[] digits = {2, 0, 6};
+        String[] expectedResult = {"cym", "cyn", "cyo", "czm", "czn", "czo", "dym", "dyn", "dyo", "dzm", "dzn", "dzo"};
+        List<String> result = mnemonic.findMnemonicsCustom(digits);
+
+        assertThat(result.size(), is(expectedResult.length));
+        for(int i = 0 ; i < expectedResult.length ; i++) {
+            assertThat(result.contains(expectedResult[i]), is(true));
         }
     }
 }

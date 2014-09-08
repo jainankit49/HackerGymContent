@@ -18,7 +18,7 @@ import java.util.Deque;
  * Given a cell, s[i][j], color the area that bounds that point.
  *
  * For more detailed solution see:
- * http://stage.hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=21
+ * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=21
  */
 
 public class Problem21 {

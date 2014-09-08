@@ -9,11 +9,24 @@ import java.util.Map;
  * Created by Fathalian on 8/8/14.
  * HackerGym.com
  */
-public class Mnemonic {
+
+/**
+ * Imagine that you have a phone dialer.
+ * Given a phone number in the form of an array of digits,
+ * determine all the mnemonics for that phone number.
+ * Assume the mnemonics for all digits are given to you in a hash.
+ * Here is an example of only one of the mnemonics for the phone number:
+ * 215-5887 2155887 -> CALLTUR
+ *
+ * For more detailed solution:
+ * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=23
+ */
+
+public class Problem23 {
 
     private Map<Integer, String> digitMnemonic;
 
-    public Mnemonic() {
+    public Problem23() {
         digitMnemonic = new HashMap<>();
         digitMnemonic.put(0, "yz");
         digitMnemonic.put(1, "ab");
@@ -26,6 +39,17 @@ public class Mnemonic {
         digitMnemonic.put(8, "stu");
         digitMnemonic.put(9, "vwx");
     }
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public List<String> findMnemonicsCustom(int[] number) {
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testFindMnemonics
+        return findMnemonics(number);
+    }
+
     public List<String> findMnemonics(int[] number) {
         return findMnemonicsRecursive(number, 0, number.length - 1);
     }

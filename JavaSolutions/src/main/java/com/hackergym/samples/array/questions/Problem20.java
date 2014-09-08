@@ -10,7 +10,7 @@ package com.hackergym.samples.array.questions;
  * write an algorithm that returns the index of the first occurrence of s in t, if any at all.
  *
  * For more detailed solution:
- * http://stage.hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=20
+ * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=20
  */
 
 public class Problem20 {
