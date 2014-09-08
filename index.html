@@ -4,7 +4,7 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="HackerGym  : Code for Solutions ">
+    <meta name="description" content="HackerGym  : Code for HackerGym Solutions">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
@@ -19,7 +19,7 @@
           <a id="forkme_banner" href="https://github.com/Fathalian/HackerGymContent">View on GitHub</a>
 
           <h1 id="project_title">HackerGym </h1>
-          <h2 id="project_tagline">Code for Solutions </h2>
+          <h2 id="project_tagline">Code for HackerGym Solutions</h2>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/Fathalian/HackerGymContent/zipball/master">Download this project as a .zip file</a>
@@ -114,32 +114,63 @@ $ ./gradlew test
 
 <p><img src="https://s3-us-west-2.amazonaws.com/hackergym-images/I4.gif" alt="image"></p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<h2>
+<a name="project-structure" class="anchor" href="#project-structure"><span class="octicon octicon-link"></span></a>Project Structure</h2>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>Under the <code>src</code> folder there are two standard folders: </p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<ul>
+<li>  <code>src/main/java</code> : Contains the actual code for solutions. Each topic has its own package and the name of the classes correspond with the name of the questions on <a href="http://hackergym.com">http://hackergym.com</a>
+</li>
+<li>  <code>src/test/java</code> : Contains the unit tests for solutions. The name of the packages and classes correspond with the packages and classess under <code>src/main/java</code>
+</li>
+</ul><h2>
+<a name="how-to-add-your-custom-solutions" class="anchor" href="#how-to-add-your-custom-solutions"><span class="octicon octicon-link"></span></a>How to Add your Custom Solutions</h2>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>If you go under each problem, you will see a section describing the problem and a method as soon as the class begins. The method usually has a big comment block saying "Your Custom Solution". All you need to do is to remove the existing line of code in that method and write your own solution there.  </p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<p><img src="https://s3-us-west-2.amazonaws.com/hackergym-images/CustomSolution.png" alt="image"></p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>Once you are done, you can run the unit tests against your solution using one of the approaches explained above. </p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<p><img src="https://s3-us-west-2.amazonaws.com/hackergym-images/UnitTests.png" alt="image"></p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>Unit tests will be run against your custom solution. These unit tests contain the word Custom in them so that they are easy to spot. </p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<h2>
+<a name="whats-next" class="anchor" href="#whats-next"><span class="octicon octicon-link"></span></a>What's next</h2>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>HackerGym gets updates every week with a new batch of questions. So check the repo frequently so that you don't miss new questions. </p>
+
+<h2>
+<a name="support" class="anchor" href="#support"><span class="octicon octicon-link"></span></a>Support</h2>
+
+<p>If you have any trouble setting up your environment or see a wrong solution, contact <a href="mailto:team@hackergym.com">team@hackergym.com</a> or open an issue <a href="https://github.com/Fathalian/HackerGymContent/issues">here</a>. </p>
+
+<p>If you have better solutions, want to modify existing solutions, or have a solution in other languages fork the repo and send us a pull request. We will merge your changes as soon as possible. </p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p><strong>MIT LICENSE</strong></p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.</p>
       </section>
     </div>
 
