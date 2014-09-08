@@ -5,9 +5,10 @@ import org.junit.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-public class WhiteSpaceTest {
+public class Problem2FollowupTest {
 
-    WhiteSpace remover = new WhiteSpace();
+    Problem2Followup remover = new Problem2Followup();
+
     @Test
     public void testRemoveWhiteSpaceInPlace() throws Exception {
 
@@ -47,5 +48,26 @@ public class WhiteSpaceTest {
         assertThat(remover.removeWhiteSpaceExtraMemory("       "),
                 is(""));
 
+    }
+
+    @Test
+    public void testRemoveWhiteSpaceCustom() throws Exception {
+
+//        assertThat(remover.removeWhiteSpaceInPlace("  My Cat    is   "),
+//                is("My Cat is"));
+        assertThat(remover.removeWhiteSpaceCustom("    My  abs       are good    "),
+                is("My abs are good"));
+    }
+
+    @Test
+    public void testRemoveWhiteSpaceCustomNoWhitespace() throws Exception {
+        assertThat(remover.removeWhiteSpaceCustom("My cat is sitting on the space bar"),
+                is("My cat is sitting on the space bar"));
+    }
+
+    @Test
+    public void testRemoveWhiteSpaceCustomAllWhiteSpace() throws Exception {
+        assertThat(remover.removeWhiteSpaceCustom("       "),
+                is(""));
     }
 }

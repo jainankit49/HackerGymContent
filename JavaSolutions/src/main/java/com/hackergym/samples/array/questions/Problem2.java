@@ -12,7 +12,7 @@ import java.util.Arrays;
  * Given an element, write an algorithm that removes all the occurrences of that element.
  *
  * For more detailed solution see:
- * http://stage.hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=2
+ * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=2
  */
 public class Problem2 {
 

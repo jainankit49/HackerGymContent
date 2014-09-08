@@ -22,6 +22,10 @@ import java.util.stream.Collectors;
  *
  *  Adds element “e” inside a page with index “pageNo”, at the index “elementIndex” of that page.
  * public void insertElement (int pageNo, int elementIndex, Element e);
+ *
+ * For more detailed Solution see:
+ * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=9
+ *
  */
 
 public class Problem9 {

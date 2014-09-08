@@ -8,7 +8,25 @@ import java.util.Set;
  * Created by Fathalian on 7/30/14.
  * HackerGym.com
  */
-public class WhiteSpace {
+
+/**
+ * You have a string that has extra spaces.
+ * Write an algorithm to remove those whitespaces.
+ *
+ * For a more detailed solution see:
+ * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=2
+ */
+public class Problem2Followup {
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public String removeWhiteSpaceCustom(String s) {
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testWhitespaceCustom
+        return removeWhiteSpaceExtraMemory(s);
+    }
 
     public String removeWhiteSpaceInPlace(String s) {
 

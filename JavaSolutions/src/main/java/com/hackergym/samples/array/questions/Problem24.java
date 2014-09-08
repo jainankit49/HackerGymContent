@@ -4,7 +4,25 @@ package com.hackergym.samples.array.questions;
  * Created by Fathalian on 8/8/14.
  * HackerGym.com
  */
-public class SpiralTraverser {
+
+/**
+ * Imagine you have an n x n matrix of numbers.
+ * Write an algorithm to print the Matrix in a spiral order.
+ *
+ * More detailed solution see:
+ * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=24
+ */
+public class Problem24 {
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public String traverseSpiralCustom(int[][] matrix) {
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testTraverseSpiralCustom
+        return traverseSpiral(matrix);
+    }
 
     public String traverseSpiral(int[][] matrix) {
 
