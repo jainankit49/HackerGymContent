@@ -16,14 +16,14 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Zaryafaraj/HackerGymContent">View on GitHub</a>
+          <a id="forkme_banner" href="https://github.com/Fathalian/HackerGymContent">View on GitHub</a>
 
           <h1 id="project_title">HackerGym </h1>
           <h2 id="project_tagline">Code for Solutions </h2>
 
             <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/Zaryafaraj/HackerGymContent/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/Zaryafaraj/HackerGymContent/tarball/master">Download this project as a tar.gz file</a>
+              <a class="zip_download_link" href="https://github.com/Fathalian/HackerGymContent/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Fathalian/HackerGymContent/tarball/master">Download this project as a tar.gz file</a>
             </section>
         </header>
     </div>
@@ -31,10 +31,72 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <h2>
+<a name="what-is-this-" class="anchor" href="#what-is-this-"><span class="octicon octicon-link"></span></a>What is this ?</h2>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>This repo contains solutions for coding challenges on <a href="http://hackergym.com">http://hackergym.com</a>. </p>
+
+<p>For each question, there are multiple solutions available in Java. In addition, all solutions come with extensive unit tests that test for correctness and common pitfalls and edge cases. </p>
+
+<p>More importantly, each solution contains placeholders for you own custom solution. You can add your own solutions to these placeholders and all the unit tests will automatically run on it and verify it's correctness. </p>
+
+<h2>
+<a name="how-to-use-this-" class="anchor" href="#how-to-use-this-"><span class="octicon octicon-link"></span></a>How to use this ?</h2>
+
+<p>The best way to use this repo is along with <a href="http://hackergym.com">http://hackergym.com</a>. </p>
+
+<p>We recommend that you go through each question using the simulated environment on the website. Then, if you have a better solution and want to verify it use this repo to run our unit tests against it. </p>
+
+<h2>
+<a name="how-to-set-up" class="anchor" href="#how-to-set-up"><span class="octicon octicon-link"></span></a>How to set up</h2>
+
+<p>First you need to install JDK 8 from <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">here</a>. </p>
+
+<p>After the installation do the following to make sure you have the correct version: </p>
+
+<pre><code>$ javac -version
+</code></pre>
+
+<p>Now download the zip/tar file from top of this page and unzip it. Then follow the instructions below for your favorite java development tool. </p>
+
+<h3>
+<a name="command-line" class="anchor" href="#command-line"><span class="octicon octicon-link"></span></a>Command Line</h3>
+
+<p>From the extracted folder: </p>
+
+<pre><code>$ cd JavaSolutions/
+$ ./gradlew
+$ ./gradlew test
+
+</code></pre>
+
+<p>This will run all the unit tests against the code. </p>
+
+<p>You can use the <code>./gradlew</code> to run any task inlcuding build and test.</p>
+
+<h3>
+<a name="eclipse" class="anchor" href="#eclipse"><span class="octicon octicon-link"></span></a>Eclipse</h3>
+
+<p>First install Gradle from Eclipse Marketplace.</p>
+
+<p><img src="https://s3-us-west-2.amazonaws.com/hackergym-images/0.gif" alt="image">:</p>
+
+<p>Now set you project java version to 1.8:</p>
+
+<p><img src="https://s3-us-west-2.amazonaws.com/hackergym-images/1.gif" alt="image"></p>
+
+<p>Having installed the Gradle plugin, import the project as a Gradle project:</p>
+
+<p><img src="https://s3-us-west-2.amazonaws.com/hackergym-images/2.gif" alt="image"></p>
+
+<p>Finally, open the Gradle Task view and run with test. </p>
+
+<p><img src="https://s3-us-west-2.amazonaws.com/hackergym-images/3.gif" alt="image"></p>
+
+<p>This will run all of the unit tests on the solutions. </p>
+
+<h3>
+<a name="intellijidea" class="anchor" href="#intellijidea"><span class="octicon octicon-link"></span></a>IntellijIDEA</h3>
 
 <pre><code>$ cd your_repo_root/repo_name
 $ git fetch origin
@@ -68,7 +130,7 @@ $ git checkout gh-pages
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">HackerGym  maintained by <a href="https://github.com/Zaryafaraj">Zaryafaraj</a></p>
+        <p class="copyright">HackerGym  maintained by <a href="https://github.com/Fathalian">Fathalian</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
