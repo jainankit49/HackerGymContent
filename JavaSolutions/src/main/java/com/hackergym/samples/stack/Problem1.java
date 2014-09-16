@@ -19,6 +19,9 @@ import java.util.EmptyStackException;
  * public void push(int stackIndex, Element value);
  * public Element pop(int stackIndex);
  * public boolean isEmpty(int stackIndex);
+ *
+ * For more detailed solution see:
+ * http://hackergym.com/#/problemView/a7f47520-3945-11e4-916c-0800200c9a66?p=1
  */
 public class Problem1 {
 
@@ -226,7 +229,7 @@ public class Problem1 {
         return new KStackCustomFixedSize(k, size);
     }
 
-    public KStackCustomFlexibleSize fetFlexibleSizeCustomStack(int k, int size) {
+    public KStackCustomFlexibleSize getFlexibleSizeCustomStack(int k, int size) {
         return new KStackCustomFlexibleSize(k, size);
     }
 }

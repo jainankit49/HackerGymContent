@@ -8,7 +8,11 @@ import java.util.Stack;
  */
 
 /**
+ * Implement an algorithm that reverses a stack.
+ * Your algorithm should not explicitly use any other data structure
  *
+ * For more detailed solution see:
+ * http://hackergym.com/#/problemView/a7f47520-3945-11e4-916c-0800200c9a66?p=8
  */
 public class Problem8 {
 

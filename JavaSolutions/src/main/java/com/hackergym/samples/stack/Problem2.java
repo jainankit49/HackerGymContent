@@ -14,6 +14,8 @@ import java.util.Stack;
 
  * Push, pop, and min operations should be in O(1) time complexity.
 
+ * For more detailed solution see:
+ * http://hackergym.com/#/problemView/a7f47520-3945-11e4-916c-0800200c9a66?p=2
  */
 
 public class Problem2 {

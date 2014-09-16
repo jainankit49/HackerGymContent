@@ -19,7 +19,8 @@ import java.util.Stack;
  * 2-	You can only pick a disk from the top of a tower.
  * 3-	Disks can only be placed on top of larger disks.
 
-
+ * For more detailed solution see:
+ * http://hackergym.com/#/problemView/a7f47520-3945-11e4-916c-0800200c9a66?p=3
  */
 public class Problem3 {
 

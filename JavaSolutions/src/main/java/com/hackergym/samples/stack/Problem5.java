@@ -12,6 +12,9 @@ import java.util.Stack;
  * (Top of the stack is the smallest element in the stack).
 
  *You can only use stacks as data structures.
+ *
+ * For more detailed solution see:
+ * http://hackergym.com/#/problemView/a7f47520-3945-11e4-916c-0800200c9a66?p=5
  */
 public class Problem5 {
 

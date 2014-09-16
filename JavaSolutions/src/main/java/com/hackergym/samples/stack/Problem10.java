@@ -14,7 +14,11 @@ import java.util.Stack;
  * <p/>
  * Given an array of building heights, calculate the area of the largest rectangle
  * that only contains buildings.
+ *
+ * For more detailed solution see:
+ * http://hackergym.com/#/problemView/a7f47520-3945-11e4-916c-0800200c9a66?p=10
  */
+
 public class Problem10 {
 
 

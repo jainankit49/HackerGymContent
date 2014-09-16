@@ -325,7 +325,7 @@ public class Problem1Test {
         //Arrange
         int stackSize = 3;
         int numberOfStacks = 4;
-        Problem1.KStack kStack = problem1.getFlexibleSizeStack(numberOfStacks, stackSize);
+        Problem1.KStack kStack = problem1.getFlexibleSizeCustomStack(numberOfStacks, stackSize);
 
         //Act
         //all stacks should be initially empty
@@ -382,7 +382,7 @@ public class Problem1Test {
         //Arrange
         int stackSize = 3;
         int numberOfStacks = 4;
-        Problem1.KStack kStack = problem1.getFlexibleSizeStack(numberOfStacks, stackSize);
+        Problem1.KStack kStack = problem1.getFlexibleSizeCustomStack(numberOfStacks, stackSize);
 
         //Act
         kStack.push(2, new Element("1"));
@@ -407,7 +407,7 @@ public class Problem1Test {
         //Arrange
         int stackSize = 3;
         int numberOfStacks = 4;
-        Problem1.KStack kStack = problem1.getFlexibleSizeStack(numberOfStacks, stackSize);
+        Problem1.KStack kStack = problem1.getFlexibleSizeCustomStack(numberOfStacks, stackSize);
 
         assertThat(kStack.isEmpty(1), is(true));
         kStack.push(1, new Element("x"));
@@ -423,7 +423,7 @@ public class Problem1Test {
         //Arrange
         int stackSize = 3;
         int numberOfStacks = 4;
-        Problem1.KStack kStack = problem1.getFixedSizeCustomStack(numberOfStacks, stackSize);
+        Problem1.KStack kStack = problem1.getFlexibleSizeCustomStack(numberOfStacks, stackSize);
         kStack.push(10, new Element("1"));
     }
 

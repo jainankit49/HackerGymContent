@@ -14,6 +14,9 @@ import java.util.Stack;
  * <p/>
  * Your queue should have dequeue, enqueue, and isEmpty operations.
  * Stack provides you with push, pop, and isEmpty operations.
+ *
+ * For more detailed solution see:
+ * http://hackergym.com/#/problemView/a7f47520-3945-11e4-916c-0800200c9a66?p=4
  */
 public class Problem4 {
 

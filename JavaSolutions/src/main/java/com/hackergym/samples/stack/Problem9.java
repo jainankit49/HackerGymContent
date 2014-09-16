@@ -19,7 +19,9 @@ import java.util.Stack;
 
  * Given a string representing an RPN that only contains integers,
  * write an algorithm to calculate the result.
-
+ *
+ * For more detailed solution see:
+ * http://hackergym.com/#/problemView/a7f47520-3945-11e4-916c-0800200c9a66?p=9
  */
 public class Problem9 {
 
