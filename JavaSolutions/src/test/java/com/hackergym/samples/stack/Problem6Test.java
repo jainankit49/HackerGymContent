@@ -1,7 +1,7 @@
 package com.hackergym.samples.stack;
 
-import com.hackergym.samples.tree.*;
 import com.hackergym.samples.tree.Problem5;
+import com.hackergym.samples.tree.model.TreeNode;
 import org.junit.Test;
 
 import java.util.Arrays;

@@ -6,11 +6,12 @@ package com.hackergym.samples.tree;
  */
 
 import com.hackergym.samples.model.Element;
+import com.hackergym.samples.tree.model.TreeNode;
 
 /**
  * Given a sorted array, generate a corresponding binary search tree for it.
  */
-public class Problem5 {
+public class Problem5<T> {
 
     public TreeNode generateBST(Integer[] elements) {
         return generateBSTRecursive(elements, 0, elements.length - 1);
@@ -31,4 +32,6 @@ public class Problem5 {
         node.right = generateBSTRecursive(elements, middle + 1, end);
         return node;
     }
+
+
 }

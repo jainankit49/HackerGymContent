@@ -1,6 +1,6 @@
 package com.hackergym.samples.stack;
 
-import com.hackergym.samples.tree.TreeNode;
+import com.hackergym.samples.tree.model.TreeNode;
 
 import java.util.*;
 

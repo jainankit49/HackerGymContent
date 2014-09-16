@@ -1,4 +1,4 @@
-package com.hackergym.samples.tree;
+package com.hackergym.samples.tree.model;
 
 import com.hackergym.samples.model.Element;
 
