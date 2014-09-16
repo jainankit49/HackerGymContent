@@ -6,7 +6,6 @@ package com.hackergym.samples.tree;
  */
 
 import com.hackergym.samples.tree.model.IntNode;
-import sun.plugin.dom.exception.InvalidStateException;
 
 /**
  * In this problem we are going to implement search, insert,
@@ -68,7 +67,7 @@ public class Problem1 {
         //if we have reached the final position
         if (node == null) {
 
-            if (parent == null) throw new InvalidStateException("both node and parent are null");
+            if (parent == null) throw new IllegalStateException();
 
             //check whether to put the new node on the parents
             //left or on the parents right
