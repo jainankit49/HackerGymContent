@@ -1,7 +1,7 @@
 package com.hackergym.samples.stack;
 
 import com.hackergym.samples.model.Element;
-import com.hackergym.samples.tree.StringNode;
+import com.hackergym.samples.tree.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -25,20 +25,20 @@ public class Problem7 {
     /*============================================
     *                Your Custom Solution
     ============================================*/
-    List<String> printGenerationsCustom(StringNode root) {
+    List<String> printGenerationsCustom(TreeNode root) {
         //comment out the line below and add your own solution
         //unit tests will be run automatically against your solution
         //the tests for your custom solution start with testPrintGenerationsCustom
         return printGenerations(root);
     }
 
-    List<String> printGenerations(StringNode root) {
+    List<String> printGenerations(TreeNode root) {
 
         List<String> result = new ArrayList<>();
-        Queue<StringNode> queue = new ArrayDeque<>();
+        Queue<TreeNode> queue = new ArrayDeque<>();
         queue.add(root);
         while (!queue.isEmpty()) {
-            StringNode head = queue.remove();
+            TreeNode head = queue.remove();
             result.add(head.value.getValue());
             if (head.left != null) queue.add(head.left);
             if (head.right != null) queue.add(head.right);
@@ -46,16 +46,16 @@ public class Problem7 {
         return result;
     }
 
-    List<String> printGenerationsSeparator(StringNode root) {
+    List<String> printGenerationsSeparator(TreeNode root) {
 
         List<String> result = new ArrayList<>();
-        StringNode seperator = new StringNode(new Element("|"));
-        Queue<StringNode> queue = new ArrayDeque<>();
+        TreeNode seperator = new TreeNode(new Element("|"));
+        Queue<TreeNode> queue = new ArrayDeque<>();
         queue.add(root);
         queue.add(seperator);
 
         while (!queue.isEmpty()) {
-            StringNode head = queue.remove();
+            TreeNode head = queue.remove();
             //if we are working with the separator
             //pick the separator and put it at the
             //end of the queue
@@ -75,14 +75,14 @@ public class Problem7 {
         return result;
     }
 
-    List<String> printGenerationsCounters(StringNode root) {
+    List<String> printGenerationsCounters(TreeNode root) {
         List<String> result = new ArrayList<>();
-        Queue<StringNode> queue = new ArrayDeque<>();
+        Queue<TreeNode> queue = new ArrayDeque<>();
         queue.add(root);
         int currentGenCounter = 1;
         int nextGenCounter = 0;
         while (!queue.isEmpty()) {
-            StringNode head = queue.remove();
+            TreeNode head = queue.remove();
             result.add(head.value.getValue());
             if (head.left != null) {
                 queue.add(head.left);

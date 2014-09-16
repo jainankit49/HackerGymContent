@@ -5,6 +5,16 @@ package com.hackergym.samples.tree;
  * HackerGym.com
  */
 
+/**
+ *In this problem we are going to implement search, insert,
+ * and delete in a binary search tree.
+ *
+ * Lets start with search:
+
+ * You are given a binary search tree.
+ * Write an algorithm that given a value X finds the node that contains that value.
+
+ */
 public class Problem1 {
 
     public IntNode searchCustom(int value) {

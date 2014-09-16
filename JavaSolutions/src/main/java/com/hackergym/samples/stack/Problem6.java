@@ -1,6 +1,6 @@
 package com.hackergym.samples.stack;
 
-import com.hackergym.samples.tree.StringNode;
+import com.hackergym.samples.tree.TreeNode;
 
 import java.util.*;
 
@@ -25,21 +25,21 @@ public class Problem6 {
     /*============================================
     *                Your Custom Solution
     ============================================*/
-    public List<Integer> printCustom(StringNode root) {
+    public List<Integer> printCustom(TreeNode root) {
         //comment out the line below and add your own solution
         //unit tests will be run automatically against your solution
         //the tests for your custom solution start with testPrintWithHash
         return printWithHash(root);
     }
 
-    public List<Integer> printWithHash(StringNode root) {
+    public List<Integer> printWithHash(TreeNode root) {
         List<Integer> result = new ArrayList<>();
-        Set<StringNode> visited = new HashSet<>();
-        Stack<StringNode> stack = new Stack<>();
+        Set<TreeNode> visited = new HashSet<>();
+        Stack<TreeNode> stack = new Stack<>();
 
         stack.push(root);
         while (!stack.isEmpty()) {
-            StringNode top = stack.peek();
+            TreeNode top = stack.peek();
             //If the node has a left child that is not visited yet, we push the left child to the stack.
             if (top.left != null && !visited.contains(top.left)) {
                 stack.push(top.left);
@@ -60,10 +60,10 @@ public class Problem6 {
         return result;
     }
 
-    public List<Integer> printWithAux(StringNode root) {
+    public List<Integer> printWithAux(TreeNode root) {
         List<Integer> result = new ArrayList<>();
-        Stack<StringNode> stack = new Stack<>();
-        StringNode aux = root;
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode aux = root;
         while(!stack.isEmpty() || aux != null) {
 
             //First run aux to the left side of a nodes and push every node
@@ -75,7 +75,7 @@ public class Problem6 {
 
             //now pop the stack, print, and reposition aux to the right child
             // (which could be null)
-            StringNode top = stack.pop();
+            TreeNode top = stack.pop();
             result.add(Integer.valueOf(top.value.getValue()));
             aux = top.right;
         }

@@ -21,7 +21,7 @@ public class Problem6Test {
         Integer[] treeNodes = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
         List<Integer> expected = Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
 
-        StringNode root = treeGen.generateBST(treeNodes);
+        TreeNode root = treeGen.generateBST(treeNodes);
         List<Integer> result = solver.printCustom(root);
 
         assertThat(result, is(expected));
@@ -33,7 +33,7 @@ public class Problem6Test {
         Integer[] treeNodes = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         List<Integer> expected = Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
-        StringNode root = treeGen.generateBST(treeNodes);
+        TreeNode root = treeGen.generateBST(treeNodes);
         List<Integer> result = solver.printCustom(root);
 
         assertThat(result, is(expected));
@@ -45,7 +45,7 @@ public class Problem6Test {
         Integer[] treeNodes = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
         List<Integer> expected = Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
 
-        StringNode root = treeGen.generateBST(treeNodes);
+        TreeNode root = treeGen.generateBST(treeNodes);
         List<Integer> result = solver.printWithHash(root);
 
         assertThat(result, is(expected));
@@ -57,7 +57,7 @@ public class Problem6Test {
         Integer[] treeNodes = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         List<Integer> expected = Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
-        StringNode root = treeGen.generateBST(treeNodes);
+        TreeNode root = treeGen.generateBST(treeNodes);
         List<Integer> result = solver.printWithHash(root);
 
         assertThat(result, is(expected));
@@ -69,7 +69,7 @@ public class Problem6Test {
         Integer[] treeNodes = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
         List<Integer> expected = Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
 
-        StringNode root = treeGen.generateBST(treeNodes);
+        TreeNode root = treeGen.generateBST(treeNodes);
         List<Integer> result = solver.printWithAux(root);
 
         assertThat(result, is(expected));
@@ -80,7 +80,7 @@ public class Problem6Test {
         Integer[] treeNodes = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         List<Integer> expected = Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
-        StringNode root = treeGen.generateBST(treeNodes);
+        TreeNode root = treeGen.generateBST(treeNodes);
         List<Integer> result = solver.printWithAux(root);
 
         assertThat(result, is(expected));
