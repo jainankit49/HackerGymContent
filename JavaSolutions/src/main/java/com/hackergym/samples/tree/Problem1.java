@@ -239,8 +239,6 @@ public class Problem1 {
                 return parent;
             }
         }
-
-
     }
 }
 
