@@ -7,6 +7,18 @@ import java.util.List;
  * Created by Fathalian on 9/17/14.
  * HackerGym.com
  */
+
+/**
+ * A max heap or priority queue is a type of binary tree in which
+ * each node has the maximum value of the subtree that starts from that node.
+ *
+ * In addition, a heap is always balanced and
+ * new nodes get added from left to right in the lower level.
+
+ Implement a min heap that provides two operations:
+ -	Insert: inserts a given node into the heap.
+ -	ExtractMax: Removes the maximum value from the heap.
+ */
 public class Problem2 {
 
     public interface MaxHeap {
@@ -88,7 +100,7 @@ public class Problem2 {
                 nodes.set(rootIndex, newChild);
 
             }
-            else if (rightChild == null || (leftChild != null &&leftChild >= rightChild)) {
+            else if (rightChild == null || (leftChild != null && leftChild >= rightChild)) {
                 Integer newChild = extractMaxRecursive(leftChildIndex(rootIndex));
                 nodes.set(rootIndex, newChild);
             }
