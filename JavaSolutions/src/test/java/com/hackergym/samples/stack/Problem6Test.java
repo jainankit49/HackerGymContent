@@ -1,6 +1,6 @@
 package com.hackergym.samples.stack;
 
-import com.hackergym.samples.tree.Problem5;
+import com.hackergym.samples.tree.Problem4;
 import com.hackergym.samples.tree.model.TreeNode;
 import org.junit.Test;
 
@@ -13,7 +13,7 @@ import static org.hamcrest.core.Is.is;
 public class Problem6Test {
 
     Problem6 solver = new Problem6();
-    Problem5 treeGen = new com.hackergym.samples.tree.Problem5();
+    Problem4 treeGen = new com.hackergym.samples.tree.Problem4();
 
 
     @Test

@@ -8,12 +8,27 @@ package com.hackergym.samples.tree;
 import com.hackergym.samples.model.Element;
 import com.hackergym.samples.tree.model.TreeNode;
 
-/**
- * Given a sorted array, generate a corresponding binary search tree for it.
- */
-public class Problem5<T> {
+import java.util.Arrays;
 
-    public TreeNode generateBST(Integer[] elements) {
+/**
+ * Given an array, generate the most balanced binary search tree for that array.
+ */
+public class Problem4 {
+
+
+    /*============================================
+    *                Your Custom Solution
+    ============================================*/
+    public TreeNode generateBSTCustom(Integer[] elements){
+        //comment out the line below and add your own solution
+        //unit tests will be run automatically against your solution
+        //the tests for your custom solution start with testGenerateBST
+        return generateBST(elements);
+    }
+
+    public TreeNode generateBST(Integer[] elements)
+    {
+        Arrays.sort(elements);
         return generateBSTRecursive(elements, 0, elements.length - 1);
     }
 
