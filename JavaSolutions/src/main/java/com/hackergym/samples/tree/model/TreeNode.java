@@ -15,6 +15,10 @@ public class TreeNode {
         this.value = value;
     }
 
+    public TreeNode(String value) {
+        this.value = new Element(value);
+    }
+
     @Override
     public String toString() {
         return value.getValue();
