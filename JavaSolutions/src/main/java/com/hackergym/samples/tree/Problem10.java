@@ -19,6 +19,8 @@ import static com.hackergym.samples.tree.Problem6.*;
 
 * If there are even number of elements, the median is the smaller value.
 
+ * see more details at :
+ * http://hackergym.com/#!/problemview/8790c162-f125-44e7-88d5-d1cd94b98264?p=10
  */
 public class Problem10 {
 

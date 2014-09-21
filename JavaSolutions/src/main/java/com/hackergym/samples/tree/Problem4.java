@@ -12,6 +12,10 @@ import java.util.Arrays;
 
 /**
  * Given an array, generate the most balanced binary search tree for that array.
+ *
+ *
+ * see more details at :
+ * http://hackergym.com/#!/problemview/8790c162-f125-44e7-88d5-d1cd94b98264?p=4
  */
 public class Problem4 {
 

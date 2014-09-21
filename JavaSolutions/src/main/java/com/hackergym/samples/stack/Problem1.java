@@ -21,7 +21,7 @@ import java.util.EmptyStackException;
  * public boolean isEmpty(int stackIndex);
  *
  * For more detailed solution see:
- * http://hackergym.com/#/problemView/a7f47520-3945-11e4-916c-0800200c9a66?p=1
+ * http://hackergym.com/#!/problemView/a7f47520-3945-11e4-916c-0800200c9a66?p=1
  */
 public class Problem1 {
 

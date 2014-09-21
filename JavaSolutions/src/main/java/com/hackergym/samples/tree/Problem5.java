@@ -18,6 +18,9 @@ import java.util.Map;
  * <p/>
  * FollowUp:
  * Write code detect that your tree is a binary search tree.
+ *
+ * see more details at :
+ * http://hackergym.com/#!/problemview/8790c162-f125-44e7-88d5-d1cd94b98264?p=5
  */
 public class Problem5 {
 

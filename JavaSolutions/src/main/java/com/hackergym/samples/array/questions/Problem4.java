@@ -15,7 +15,7 @@ import java.util.Map;
  * For example: HamCryKeg is an anagram of HackerGym.
  *
  * For More Detailed Answer See:
- * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=4
+ * http://hackergym.com/#!/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=4
  */
 
 public class Problem4 {

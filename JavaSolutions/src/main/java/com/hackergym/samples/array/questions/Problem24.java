@@ -10,7 +10,7 @@ package com.hackergym.samples.array.questions;
  * Write an algorithm to print the Matrix in a spiral order.
  *
  * More detailed solution see:
- * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=24
+ * http://hackergym.com/#!/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=24
  */
 public class Problem24 {
 

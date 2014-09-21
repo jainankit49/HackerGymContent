@@ -18,7 +18,8 @@ import java.util.List;
 
 * Write an algorithm that prints out all the paths, which start from the root and sum up to a given value S.
 
-
+ * see more details at :
+ * http://hackergym.com/#!/problemview/8790c162-f125-44e7-88d5-d1cd94b98264?p=9
  */
 public class Problem9 {
 

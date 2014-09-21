@@ -13,7 +13,7 @@ import java.util.*;
  *
  * For more detailed answer see:
  *
- * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=10
+ * http://hackergym.com/#!/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=10
  */
 
 public class Problem10 {

@@ -14,7 +14,7 @@ import java.util.Set;
  * it puts zero for the whole i-th row and the whole j-th column.
  *
  * For more detailed solution see:
- * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=8
+ * http://hackergym.com/#!/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=8
  */
 
 public class Problem8 {

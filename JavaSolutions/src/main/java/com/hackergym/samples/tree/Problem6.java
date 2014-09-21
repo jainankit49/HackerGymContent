@@ -16,6 +16,10 @@ import java.util.PriorityQueue;
  * retrieve and remove the first element from the stream.
 
  * Write an algorithm that can give you the top k largest integers at any point.
+ *
+ *
+ * see more details at :
+ * http://hackergym.com/#!/problemview/8790c162-f125-44e7-88d5-d1cd94b98264?p=6
  */
 public class Problem6 {
 

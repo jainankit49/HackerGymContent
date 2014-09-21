@@ -10,6 +10,9 @@ import com.hackergym.samples.tree.model.IntNode;
 /**
  * In this problem we are going to implement search, insert,
  * and delete in a binary search tree.
+ *
+ * See more details at :
+ * http://hackergym.com/#!/problemView/8790c162-f125-44e7-88d5-d1cd94b98264?p=1
  */
 
 public class Problem1 {

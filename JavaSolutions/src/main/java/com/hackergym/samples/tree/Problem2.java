@@ -18,6 +18,10 @@ import java.util.List;
  Implement a min heap that provides two operations:
  -	Insert: inserts a given node into the heap.
  -	ExtractMax: Removes the maximum value from the heap.
+
+
+ * see more details at :
+ * http://hackergym.com/#!/problemview/8790c162-f125-44e7-88d5-d1cd94b98264?p=2
  */
 public class Problem2 {
 

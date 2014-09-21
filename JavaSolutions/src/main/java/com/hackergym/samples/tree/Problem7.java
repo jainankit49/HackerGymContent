@@ -15,6 +15,9 @@ import java.util.*;
  * of your choosing from any other node.
  *
  * Write an algorithm to copy this graph.
+ *
+ * see more details at :
+ * http://hackergym.com/#!/problemview/8790c162-f125-44e7-88d5-d1cd94b98264?p=7
  */
 
 public class Problem7 {

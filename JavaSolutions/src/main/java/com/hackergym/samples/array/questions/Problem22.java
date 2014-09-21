@@ -11,7 +11,7 @@ package com.hackergym.samples.array.questions;
  * You may use a helper method to convert a single digit character like ‘9’ to an integer.
  *
  * For more detailed solution see:
- * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=22
+ * http://hackergym.com/#!/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=22
  */
 
 public class Problem22 {

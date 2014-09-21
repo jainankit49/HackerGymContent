@@ -16,7 +16,7 @@ import java.util.List;
  * [ (1,7), (8, 19), (30, 34) ]
  *
  * For more detailed solution see:
- * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=19
+ * http://hackergym.com/#!/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=19
  */
 
 public class Problem19 {

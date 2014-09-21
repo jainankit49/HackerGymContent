@@ -14,7 +14,7 @@ package com.hackergym.samples.array.questions;
  * Note that an empty array is an acceptable answer and has a sum of zero.
  *
  * For more detailed solution see:
- * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=13
+ * http://hackergym.com/#!/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=13
  */
 public class Problem13 {
 

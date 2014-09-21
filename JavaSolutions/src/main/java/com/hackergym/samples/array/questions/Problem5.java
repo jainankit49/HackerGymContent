@@ -13,7 +13,7 @@ import com.hackergym.samples.model.Element;
  *that it has a flexible size.
  *
  * For more detailed answer see:
- * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=5
+ * http://hackergym.com/#!/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=5
  */
 
 public class Problem5 {

@@ -13,7 +13,7 @@ package com.hackergym.samples.array.questions;
  * You are also allowed to use dynamic arrays.
  *
  * For more detailed solution:
- * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=17
+ * http://hackergym.com/#!/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=17
  */
 public class Problem17 {
 

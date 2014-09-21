@@ -14,7 +14,7 @@ import com.hackergym.samples.linkedlist.model.Pair;
  * Write an algorithm to find the longest continuous increasing sub-array in O(n) time.
  *
  * For more detailed solution see:
- * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=16
+ * http://hackergym.com/#!/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=16
  */
 public class Problem16 {
 

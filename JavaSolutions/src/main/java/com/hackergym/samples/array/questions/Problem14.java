@@ -10,7 +10,7 @@ package com.hackergym.samples.array.questions;
  * Your solution must be better than O(n).
  *
  * For more detailed solution see:
- * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=14
+ * http://hackergym.com/#!/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=14
  */
 
 public class Problem14 {

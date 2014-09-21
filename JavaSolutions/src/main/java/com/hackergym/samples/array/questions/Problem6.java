@@ -11,7 +11,7 @@ import com.hackergym.samples.model.Element;
  * Write code to reverse an array.
  *
  * For more detailed solution see:
- * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=6
+ * http://hackergym.com/#!/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=6
  */
 
 public class Problem6 {

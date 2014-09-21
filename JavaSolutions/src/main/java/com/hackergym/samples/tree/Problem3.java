@@ -24,6 +24,10 @@ import java.util.*;
  * There is an edge between two nodes if they are neighbors.
  * <p/>
  * Your algorithm should return the first node from top left that is not null.
+ *
+ *
+ * see more details at :
+ * http://hackergym.com/#!/problemview/8790c162-f125-44e7-88d5-d1cd94b98264?p=3
  */
 public class Problem3 {
 

@@ -23,7 +23,7 @@ import java.util.Set;
  * additional memory for book keeping purposes.
  *
  * For more detailed solution see:
- * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=18
+ * http://hackergym.com/#!/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=18
  */
 public class Problem18 {
 

@@ -14,7 +14,7 @@ import com.hackergym.samples.model.Element;
  * Write the algorithm to perform a circular shift on arrays of a given size.
  *
  * For more detailed answer see:
- * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=3
+ * http://hackergym.com/#!/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=3
  */
 public class Problem3 {
 

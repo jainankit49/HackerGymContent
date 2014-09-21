@@ -12,7 +12,7 @@ package com.hackergym.samples.array.questions;
  * Find the best pair of purchase and sale days that yields the most profits.
  *
  * For more detailed solution see:
- * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=12
+ * http://hackergym.com/#!/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=12
  */
 public class Problem12 {
 

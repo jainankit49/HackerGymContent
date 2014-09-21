@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
  * public void insertElement (int pageNo, int elementIndex, Element e);
  *
  * For more detailed Solution see:
- * http://hackergym.com/#/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=9
+ * http://hackergym.com/#!/problemView/d484fb87-cd9c-48aa-a013-84c21dfc56f2?p=9
  *
  */
 

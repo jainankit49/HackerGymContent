@@ -17,6 +17,9 @@ import java.util.Stack;
  * Write an algorithm that finds the first common ancestor of two nodes in a binary tree.
  * <p/>
  * How would you solve this problem when there are no links to parents ?
+ *
+ * see more details at :
+ * http://hackergym.com/#!/problemview/8790c162-f125-44e7-88d5-d1cd94b98264?p=8
  */
 public class Problem8 {
 
