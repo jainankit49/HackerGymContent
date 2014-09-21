@@ -54,11 +54,13 @@ public class Problem1 {
         if (root.value == value) return root;
 
         //search left
-        IntNode result = search(root.left, value);
-        if (result != null) return result;
+        if (value < root.value) {
+            return search(root.left, value);
+        } else {
+            //search right
+            return search(root.right, value);
+        }
 
-        //search right
-        return search(root.right, value);
     }
 
     public void insert(IntNode root, int value) {
