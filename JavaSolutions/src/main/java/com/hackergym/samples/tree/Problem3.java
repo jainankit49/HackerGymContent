@@ -76,14 +76,16 @@ public class Problem3 {
                         allNodes.put(location(i, j, colSize), node);
                     }
 
-                    GraphNode<CellType> mainNode = allNodes.get(location(i, j, colSize));
+                    GraphNode<CellType> mainNode =
+                            allNodes.get(location(i, j, colSize));
 
                     //this is to make sure we always return an answer
                     if (firstNode == null) {
                         firstNode = mainNode;
                     }
 
-                    //We are going to add the adjacents in a clockwise manner starting from right
+                    //We are going to add the adjacents in a clockwise manner starting
+                    //from right
                     //first right, then bottom, then left, then up
                     if (j + 1 < colSize && inputs[i][j + 1] != CellType.WALL) {
                         if (!allNodes.containsKey(location(i, j + 1, colSize))) {
@@ -91,7 +93,8 @@ public class Problem3 {
                             allNodes.put(location(i, j + 1, colSize), node);
                         }
 
-                        GraphNode<CellType> adjNode = allNodes.get(location(i, j + 1, colSize));
+                        GraphNode<CellType> adjNode =
+                                allNodes.get(location(i, j + 1, colSize));
                         mainNode.adjacents.add(adjNode);
                     }
 
@@ -102,7 +105,8 @@ public class Problem3 {
                             allNodes.put(location(i + 1, j, colSize), node);
                         }
 
-                        GraphNode<CellType> adjNode = allNodes.get(location(i + 1, j, colSize));
+                        GraphNode<CellType> adjNode =
+                                allNodes.get(location(i + 1, j, colSize));
                         mainNode.adjacents.add(adjNode);
                     }
 
@@ -113,7 +117,8 @@ public class Problem3 {
                             allNodes.put(location(i, j - 1, colSize), node);
                         }
 
-                        GraphNode<CellType> adjNode = allNodes.get(location(i, j - 1, colSize));
+                        GraphNode<CellType> adjNode =
+                                allNodes.get(location(i, j - 1, colSize));
                         mainNode.adjacents.add(adjNode);
                     }
 
@@ -124,7 +129,8 @@ public class Problem3 {
                             allNodes.put(location(i - 1, j, colSize), node);
                         }
 
-                        GraphNode<CellType> adjNode = allNodes.get(location(i - 1, j, colSize));
+                        GraphNode<CellType> adjNode =
+                                allNodes.get(location(i - 1, j, colSize));
                         mainNode.adjacents.add(adjNode);
                     }
                 }

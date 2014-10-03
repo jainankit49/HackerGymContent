@@ -34,8 +34,9 @@ public class Problem4<T extends Comparable> {
     public LinkedListNode<T> removeDuplicates(LinkedListNode<T> head) {
 
         LinkedListNode<T> temp = head;
-        LinkedListNode<T> traverser = temp;
         while (temp != null) {
+
+            LinkedListNode<T> traverser = temp;
             //since we might be moving traverser twice
             while (traverser != null && traverser.next != null) {
                 if (temp.value.equals(traverser.next.value)) {
@@ -43,6 +44,7 @@ public class Problem4<T extends Comparable> {
                 }
                 traverser = traverser.next;
             }
+
 
             temp = temp.next;
         }
