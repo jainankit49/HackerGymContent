@@ -1,17 +1,10 @@
 ## What is this ?
 
-This repo contains solutions for coding challenges on http://hackergym.com. 
+This repo contains solutions for some interesting coding challenges. 
 
 For each question, there are multiple solutions available in Java. In addition, all solutions come with extensive unit tests that test for correctness and common pitfalls and edge cases. 
 
 More importantly, each solution contains placeholders for you own custom solution. You can add your own solutions to these placeholders and all the unit tests will automatically run on it and verify it's correctness. 
-
-
-## How to use this ?
-
-The best way to use this repo is along with http://hackergym.com. 
-
-We recommend that you go through each question using the simulated environment on the website. Then, if you have a better solution and want to verify it use this repo to run our unit tests against it. 
 
 
 ## How to set up
@@ -84,7 +77,7 @@ Finally, Run the Gradle Task window and run the test task: ```view -> Tool Windo
 
 Under the ``src`` folder there are two standard folders: 
 
-* 	``src/main/java`` : Contains the actual code for solutions. Each topic has its own package and the name of the classes correspond with the name of the questions on http://hackergym.com
+* 	``src/main/java`` : Contains the actual code for solutions. Each topic has its own package and the name of the classes correspond with the name of the questions
 * 	``src/test/java`` : Contains the unit tests for solutions. The name of the packages and classes correspond with the packages and classess under ``src/main/java``
 
 ##How to Add your Custom Solutions
@@ -99,13 +92,11 @@ Once you are done, you can run the unit tests against your solution using one of
 
 Unit tests will be run against your custom solution. These unit tests contain the word Custom in them so that they are easy to spot. 
 
-##What's next
-HackerGym gets updates every week with a new batch of questions. So check the repo frequently so that you don't miss new questions. 
 
 ##Support
-If you have any trouble setting up your environment or see a wrong solution, contact team@hackergym.com or open an issue [here](https://github.com/Fathalian/HackerGymContent/issues). 
+If you have any trouble setting up your environment or see a wrong solution, open an issue [here](https://github.com/Fathalian/HackerGymContent/issues). 
 
-If you have better solutions, want to modify existing solutions, or have a solution in other languages fork the repo and send us a pull request. We will merge your changes as soon as possible. 
+If you have better solutions, want to modify existing solutions, or have a solution in other languages fork the repo and send me a pull request. I will merge your changes as soon as possible. 
 
 ##License
 **MIT LICENSE**
